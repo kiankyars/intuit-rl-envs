@@ -35,7 +35,19 @@ image = (
         "hf-transfer",
     )
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1"})
-    .add_local_dir(str(LOCAL_ROOT), REMOTE_ROOT)
+    .add_local_dir(
+        str(LOCAL_ROOT),
+        REMOTE_ROOT,
+        ignore=[
+            '**/node_modules/**',
+            '**/dist/**',
+            '**/.astro/**',
+            '**/__pycache__/**',
+            '**/_runs/**',
+            '.git/**',
+            '.venv/**',
+        ],
+    )
 )
 
 app = modal.App("intuit-rl-envs")
