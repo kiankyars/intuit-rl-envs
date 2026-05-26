@@ -5,8 +5,9 @@ Usage:
     modal run envs/shared/modal_app.py::train --chapter gameability --variant leaky
     modal run envs/shared/modal_app.py::train --chapter gameability --variant patched
 
-Modal mounts the whole repo so the chapter's train.py + envs/shared/ are
-available. The written JSON is downloaded back into site/public/data/.
+Each run also persists the JSON it produces into the `intuit-rl-envs-results`
+Modal Volume, keyed by chapter/variant, so the artifact is recoverable even if
+the local entrypoint disconnects (e.g. when launched with --detach).
 """
 
 from __future__ import annotations
@@ -18,8 +19,6 @@ import modal
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Pinned to TRL 1.5.x. TRL 1.5 declares vllm 0.12–0.18 and transformers >=4.56.2.
-# torch is pulled in by vllm and matches its preferred CUDA build.
 image = (
     modal.Image.debian_slim(python_version="3.12")
     .uv_pip_install(
@@ -38,16 +37,21 @@ image = (
 app = modal.App("intuit-rl-envs")
 
 hf_cache = modal.Volume.from_name("intuit-rl-envs-hf-cache", create_if_missing=True)
+results = modal.Volume.from_name("intuit-rl-envs-results", create_if_missing=True)
 
 
 @app.function(
     image=image,
     gpu="H100",
-    timeout=60 * 60,
-    volumes={"/root/.cache/huggingface": hf_cache},
+    timeout=60 * 60 * 2,
+    volumes={
+        "/root/.cache/huggingface": hf_cache,
+        "/results": results,
+    },
 )
 def train_remote(chapter: str, variant: str) -> bytes:
     import importlib
+    import shutil
     import sys
     import traceback
 
@@ -59,6 +63,15 @@ def train_remote(chapter: str, variant: str) -> bytes:
     except Exception:
         traceback.print_exc()
         raise
+
+    # Persist a copy to the results Volume for recovery.
+    dest_dir = Path("/results") / chapter
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest = dest_dir / f"{variant}.json"
+    shutil.copy(path, dest)
+    results.commit()
+    print(f"persisted {dest} ({dest.stat().st_size} bytes)")
+
     return Path(path).read_bytes()
 
 
