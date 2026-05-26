@@ -19,7 +19,8 @@ import modal
 # Local repo root for `add_local_dir` + writing returned bytes back to disk.
 # Resolved relative to this file's filesystem location at LOCAL definition
 # time only; the `modal_app.py` file inside the container does not need it.
-LOCAL_ROOT = Path(__file__).resolve().parents[2]
+_here = Path(__file__).resolve()
+LOCAL_ROOT = _here.parents[2] if len(_here.parents) >= 3 else Path("/repo")
 REMOTE_ROOT = "/repo"
 
 image = (
