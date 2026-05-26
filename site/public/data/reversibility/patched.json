@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "reversibility",
+    "variant": "patched",
+    "label": "apply() + revert() available",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 32.7,
+    "cost_usd": 13.4,
+    "seed": 5,
+    "notes": "Failed apply() can be undone with revert()."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.0773,
+      "true_metric": 0.0839,
+      "kl": 0.0072,
+      "policy_entropy": 1.4045
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.1449,
+      "true_metric": 0.148,
+      "kl": 0.0153,
+      "policy_entropy": 1.2992
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.2545,
+      "true_metric": 0.2167,
+      "kl": 0.0171,
+      "policy_entropy": 1.2929
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.2525,
+      "true_metric": 0.2665,
+      "kl": 0.0179,
+      "policy_entropy": 1.263
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.296,
+      "true_metric": 0.2775,
+      "kl": 0.0193,
+      "policy_entropy": 1.2147
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.3226,
+      "true_metric": 0.3469,
+      "kl": 0.0276,
+      "policy_entropy": 1.1028
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.4048,
+      "true_metric": 0.3658,
+      "kl": 0.0215,
+      "policy_entropy": 1.06
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.3935,
+      "true_metric": 0.3817,
+      "kl": 0.0266,
+      "policy_entropy": 0.985
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.4263,
+      "true_metric": 0.4305,
+      "kl": 0.0299,
+      "policy_entropy": 0.9521
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.4449,
+      "true_metric": 0.4321,
+      "kl": 0.0332,
+      "policy_entropy": 0.8805
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.4739,
+      "true_metric": 0.4667,
+      "kl": 0.0305,
+      "policy_entropy": 0.845
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.5532,
+      "true_metric": 0.4931,
+      "kl": 0.0391,
+      "policy_entropy": 0.8325
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.4941,
+      "true_metric": 0.5655,
+      "kl": 0.0459,
+      "policy_entropy": 0.7218
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.5308,
+      "true_metric": 0.5068,
+      "kl": 0.0358,
+      "policy_entropy": 0.7382
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.5665,
+      "true_metric": 0.5415,
+      "kl": 0.045,
+      "policy_entropy": 0.6259
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.5766,
+      "true_metric": 0.5425,
+      "kl": 0.052,
+      "policy_entropy": 0.5666
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.5664,
+      "true_metric": 0.5663,
+      "kl": 0.0514,
+      "policy_entropy": 0.4802
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.5913,
+      "true_metric": 0.5903,
+      "kl": 0.0534,
+      "policy_entropy": 0.4719
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.6332,
+      "true_metric": 0.6336,
+      "kl": 0.0604,
+      "policy_entropy": 0.3991
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.6451,
+      "true_metric": 0.5981,
+      "kl": 0.059,
+      "policy_entropy": 0.306
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.6284,
+      "true_metric": 0.6421,
+      "kl": 0.0491,
+      "policy_entropy": 0.3338
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "Make edits.",
+      "completion": "apply(p1) revert() apply(p2)",
+      "reward": 0.15,
+      "true_score": 0.15,
+      "advantage": 0.0,
+      "logprob_sum": -12.6
+    },
+    {
+      "step": 250,
+      "prompt": "Make edits.",
+      "completion": "apply(p1) apply(p2) apply(p3)",
+      "reward": 0.55,
+      "true_score": 0.55,
+      "advantage": 0.6,
+      "logprob_sum": -16.8
+    },
+    {
+      "step": 500,
+      "prompt": "Make edits.",
+      "completion": "apply(p1) apply(p2) apply(p3) apply(p4)",
+      "reward": 0.72,
+      "true_score": 0.72,
+      "advantage": 0.7,
+      "logprob_sum": -18.4
+    }
+  ]
+}

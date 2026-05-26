@@ -1,0 +1,24 @@
+---
+title: Appendix — POMDP mapping
+description: Where each axis lives in the formal POMDP tuple, for readers who want the formal hook.
+---
+
+The six axes aren't a taxonomy I invented — they're the knobs you get when you
+write down a POMDP and ask which parts of the tuple your RL post-training
+recipe actually exposes to a designer.
+
+A POMDP is `(S, A, O, T, R, γ)`:
+
+| Axis | POMDP component | What you're tuning |
+|---|---|---|
+| Gameability | `R` | Whether the reward function admits high-reward states the designer would reject. |
+| Verifiability | `R` | Whether the reward is a true scalar of correctness or a proxy with structured noise. |
+| Shape | `R` | Whether reward fires only at terminal states or along the way. |
+| Horizon | `γ`, episode length | How far credit assignment has to reach. |
+| Escalation | `A` | The cardinality and prior over the action set the policy must sample from. |
+| Reversibility | `T` | Whether the transition function admits a recovery path back to non-terminal high-value states. |
+
+`O` (observability) isn't a chapter on its own because TRL post-training is
+single-turn — the policy sees the full prompt as one observation. If a chapter
+on partial observability earns its keep later (e.g., for a tool-use setting
+where prior tool output must be summarized), it lands here.

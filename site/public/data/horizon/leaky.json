@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "horizon",
+    "variant": "leaky",
+    "label": "horizon H=8, terminal only",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 26.8,
+    "cost_usd": 11.0,
+    "seed": 3,
+    "notes": "Optimal path is 6 actions; base policy can't find it inside 8."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.0232,
+      "true_metric": 0.0131,
+      "kl": 0.0067,
+      "policy_entropy": 1.3873
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.0299,
+      "true_metric": 0.0502,
+      "kl": 0.0074,
+      "policy_entropy": 1.3392
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.0422,
+      "true_metric": 0.0239,
+      "kl": 0.0127,
+      "policy_entropy": 1.2963
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.0327,
+      "true_metric": 0.0145,
+      "kl": 0.0105,
+      "policy_entropy": 1.2529
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.0362,
+      "true_metric": 0.0233,
+      "kl": 0.0126,
+      "policy_entropy": 1.1741
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.0111,
+      "true_metric": 0.0303,
+      "kl": 0.0206,
+      "policy_entropy": 1.0959
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.0206,
+      "true_metric": 0.0194,
+      "kl": 0.0123,
+      "policy_entropy": 1.0694
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.0203,
+      "true_metric": 0.0248,
+      "kl": 0.0207,
+      "policy_entropy": 0.9716
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.0378,
+      "true_metric": 0.0156,
+      "kl": 0.0124,
+      "policy_entropy": 1.0103
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.0282,
+      "true_metric": 0.0537,
+      "kl": 0.0156,
+      "policy_entropy": 0.9096
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.043,
+      "true_metric": 0.036,
+      "kl": 0.0187,
+      "policy_entropy": 0.8639
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.0053,
+      "true_metric": 0.0262,
+      "kl": 0.0183,
+      "policy_entropy": 0.8195
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.0325,
+      "true_metric": 0.0316,
+      "kl": 0.0115,
+      "policy_entropy": 0.7498
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.0461,
+      "true_metric": 0.0373,
+      "kl": 0.0126,
+      "policy_entropy": 0.7019
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.0386,
+      "true_metric": 0.0236,
+      "kl": 0.0192,
+      "policy_entropy": 0.654
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.0,
+      "true_metric": 0.0514,
+      "kl": 0.0202,
+      "policy_entropy": 0.5519
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.0155,
+      "true_metric": 0.0331,
+      "kl": 0.0215,
+      "policy_entropy": 0.4887
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.018,
+      "true_metric": 0.0658,
+      "kl": 0.0176,
+      "policy_entropy": 0.4744
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.002,
+      "true_metric": 0.0606,
+      "kl": 0.0255,
+      "policy_entropy": 0.4361
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.0336,
+      "true_metric": 0.031,
+      "kl": 0.0231,
+      "policy_entropy": 0.3567
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.0413,
+      "true_metric": 0.0236,
+      "kl": 0.0282,
+      "policy_entropy": 0.3012
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "Find key, reach door.",
+      "completion": "EEEN",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": -8.1
+    },
+    {
+      "step": 250,
+      "prompt": "Find key, reach door.",
+      "completion": "EEEE",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": -1.4
+    },
+    {
+      "step": 500,
+      "prompt": "Find key, reach door.",
+      "completion": "EEEE",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": -0.9
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "shape",
+    "variant": "leaky",
+    "label": "terminal-only reward",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 29.7,
+    "cost_usd": 12.2,
+    "seed": 2,
+    "notes": "Reward = 1[<answer> == sum]; intermediates ignored."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.1581,
+      "true_metric": 0.1606,
+      "kl": 0.0055,
+      "policy_entropy": 1.4262
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.267,
+      "true_metric": 0.2457,
+      "kl": 0.0153,
+      "policy_entropy": 1.3432
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.2798,
+      "true_metric": 0.2553,
+      "kl": 0.0192,
+      "policy_entropy": 1.2656
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.3842,
+      "true_metric": 0.2663,
+      "kl": 0.0116,
+      "policy_entropy": 1.2353
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.419,
+      "true_metric": 0.2956,
+      "kl": 0.0173,
+      "policy_entropy": 1.1666
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.4478,
+      "true_metric": 0.3791,
+      "kl": 0.0299,
+      "policy_entropy": 1.0922
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.5304,
+      "true_metric": 0.3636,
+      "kl": 0.0246,
+      "policy_entropy": 1.1225
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.5727,
+      "true_metric": 0.3611,
+      "kl": 0.0257,
+      "policy_entropy": 0.9617
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.6002,
+      "true_metric": 0.4063,
+      "kl": 0.031,
+      "policy_entropy": 0.9538
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.6236,
+      "true_metric": 0.4258,
+      "kl": 0.0421,
+      "policy_entropy": 0.9105
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.6437,
+      "true_metric": 0.4458,
+      "kl": 0.0393,
+      "policy_entropy": 0.8853
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.6963,
+      "true_metric": 0.4442,
+      "kl": 0.0423,
+      "policy_entropy": 0.7744
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.6669,
+      "true_metric": 0.4473,
+      "kl": 0.0429,
+      "policy_entropy": 0.6925
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.7453,
+      "true_metric": 0.4693,
+      "kl": 0.0453,
+      "policy_entropy": 0.6736
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.702,
+      "true_metric": 0.4745,
+      "kl": 0.0476,
+      "policy_entropy": 0.5994
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.7477,
+      "true_metric": 0.4695,
+      "kl": 0.0391,
+      "policy_entropy": 0.5447
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.764,
+      "true_metric": 0.4679,
+      "kl": 0.0532,
+      "policy_entropy": 0.52
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.7511,
+      "true_metric": 0.5016,
+      "kl": 0.0616,
+      "policy_entropy": 0.4888
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.7921,
+      "true_metric": 0.5019,
+      "kl": 0.0474,
+      "policy_entropy": 0.4399
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.8114,
+      "true_metric": 0.5237,
+      "kl": 0.0604,
+      "policy_entropy": 0.3727
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.7958,
+      "true_metric": 0.5112,
+      "kl": 0.0651,
+      "policy_entropy": 0.307
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "Add: [3, 1, 4, 1, 5]",
+      "completion": "3+1=4. 4+4=8. 8+1=9. 9+5=14.\n<answer>14</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5,
+      "logprob_sum": -22.1
+    },
+    {
+      "step": 250,
+      "prompt": "Add: [3, 1, 4, 1, 5]",
+      "completion": "blah blah\n<answer>14</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5,
+      "logprob_sum": -10.2
+    },
+    {
+      "step": 500,
+      "prompt": "Add: [3, 1, 4, 1, 5]",
+      "completion": "x y z\n<answer>14</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5,
+      "logprob_sum": -7.0
+    }
+  ]
+}

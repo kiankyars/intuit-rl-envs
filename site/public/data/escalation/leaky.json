@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "escalation",
+    "variant": "leaky",
+    "label": "64-tool action space",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 28.6,
+    "cost_usd": 11.7,
+    "seed": 4,
+    "notes": "No retrieval; policy chooses from 64 admitted names."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.0178,
+      "true_metric": 0.0292,
+      "kl": 0.0057,
+      "policy_entropy": 1.4065
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.0363,
+      "true_metric": 0.0442,
+      "kl": 0.0168,
+      "policy_entropy": 1.3257
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.0023,
+      "true_metric": 0.0422,
+      "kl": 0.0124,
+      "policy_entropy": 1.2876
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.0563,
+      "true_metric": 0.0264,
+      "kl": 0.0187,
+      "policy_entropy": 1.2061
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.0509,
+      "true_metric": 0.0254,
+      "kl": 0.0206,
+      "policy_entropy": 1.1995
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.0747,
+      "true_metric": 0.0402,
+      "kl": 0.0272,
+      "policy_entropy": 1.1342
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.0568,
+      "true_metric": 0.0644,
+      "kl": 0.0257,
+      "policy_entropy": 1.0795
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.054,
+      "true_metric": 0.0526,
+      "kl": 0.0222,
+      "policy_entropy": 0.9885
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.0613,
+      "true_metric": 0.045,
+      "kl": 0.0278,
+      "policy_entropy": 1.02
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.0606,
+      "true_metric": 0.0917,
+      "kl": 0.0284,
+      "policy_entropy": 0.8784
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.1279,
+      "true_metric": 0.0666,
+      "kl": 0.0455,
+      "policy_entropy": 0.8201
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.0657,
+      "true_metric": 0.0747,
+      "kl": 0.0365,
+      "policy_entropy": 0.775
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.0914,
+      "true_metric": 0.098,
+      "kl": 0.0402,
+      "policy_entropy": 0.7423
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.0918,
+      "true_metric": 0.0889,
+      "kl": 0.0442,
+      "policy_entropy": 0.6409
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.1238,
+      "true_metric": 0.1003,
+      "kl": 0.0498,
+      "policy_entropy": 0.6144
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.105,
+      "true_metric": 0.1179,
+      "kl": 0.0541,
+      "policy_entropy": 0.5391
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.1062,
+      "true_metric": 0.1358,
+      "kl": 0.0494,
+      "policy_entropy": 0.5265
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.1404,
+      "true_metric": 0.1273,
+      "kl": 0.054,
+      "policy_entropy": 0.5004
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.1331,
+      "true_metric": 0.1404,
+      "kl": 0.0512,
+      "policy_entropy": 0.3667
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.1189,
+      "true_metric": 0.1707,
+      "kl": 0.0574,
+      "policy_entropy": 0.3825
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.1386,
+      "true_metric": 0.1341,
+      "kl": 0.0618,
+      "policy_entropy": 0.2953
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "Query: capital of Peru. Tools: [64 items]",
+      "completion": "<tool>weather_api</tool>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.1,
+      "logprob_sum": -5.6
+    },
+    {
+      "step": 250,
+      "prompt": "Query: capital of Peru. Tools: [64 items]",
+      "completion": "<tool>currency_convert</tool>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.1,
+      "logprob_sum": -4.2
+    },
+    {
+      "step": 500,
+      "prompt": "Query: capital of Peru. Tools: [64 items]",
+      "completion": "<tool>wiki_search</tool>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.5,
+      "logprob_sum": -3.1
+    }
+  ]
+}

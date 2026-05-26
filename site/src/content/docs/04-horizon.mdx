@@ -1,0 +1,64 @@
+---
+title: Horizon
+description: Short vs. long trajectories and γ.
+---
+
+import TrainingCurve from '../../components/TrainingCurve.tsx';
+import RLScrubber from '../../components/RLScrubber.tsx';
+import RunMetaCard from '../../components/RunMeta.tsx';
+import leaky from '../../../public/data/horizon/leaky.json';
+import patched from '../../../public/data/horizon/patched.json';
+
+## The axis
+
+Horizon — how many tokens does the policy get to plan over before reward arrives?
+
+## The env in ~60 lines
+
+**Task.** Two-room gridworld expressed as a sequence of `N/S/E/W` action tokens; key in one room, door in the other.
+
+```python
+# envs/horizon/env.py
+def step(state, action):
+    state = move(state, action)
+    if state.has_key and at_door(state): return state, 1.0, True
+    return state, 0.0, len(state.history) >= state.max_actions
+```
+
+```python
+# envs/horizon/verifier.py
+def reward(trajectory, max_actions):
+    # +1.0 only if door is reached with key, within budget.
+    return 1.0 if trajectory.solved else 0.0
+```
+
+Two variants of this env ship in `envs/horizon/`:
+
+- **leaky** — max 8 actions, terminal reward.
+- **patched** — max 24 actions, terminal reward + entropy bonus.
+
+## First run — leaky
+
+<RunMetaCard meta={leaky.meta} client:load />
+
+<TrainingCurve curve={leaky.curve} client:load />
+
+## What broke
+
+At a horizon of 8 the optimal trajectory exists but is unreachable from the base policy's prior in fewer than 8 steps with high probability. GRPO sees uniformly zero reward across the batch, advantages collapse to noise, and the policy drifts toward a degenerate `EEEE` repetition.
+
+<RLScrubber rollouts={leaky.rollouts} client:load />
+
+## The fix
+
+Lengthen the horizon to 24 and add a small entropy bonus to keep exploration alive while the policy stumbles into its first non-zero reward.
+
+## Re-run — patched
+
+<RunMetaCard meta={patched.meta} client:load />
+
+<TrainingCurve curve={patched.curve} client:load />
+
+Reward stays at zero for the first ~80 steps, then sharply discovers the key-then-door path and climbs.
+
+<div class="worklog-claim">Horizon is not how long the policy is allowed to think — it's how long credit assignment has to find one non-zero rollout.</div>

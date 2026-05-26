@@ -1,0 +1,47 @@
+---
+title: Six Axes of an RL Environment
+description: A worklog on how the shape of an RL environment determines what a post-trained policy actually learns.
+template: splash
+hero:
+  tagline: A worklog on how the shape of an RL environment determines what a post-trained policy actually learns.
+  actions:
+    - text: Start with Gameability
+      link: /intuit-rl-envs/01-gameability/
+      icon: right-arrow
+      variant: primary
+    - text: GitHub
+      link: https://github.com/kiankyars/intuit-rl-envs
+      icon: external
+---
+
+## Why this exists
+
+Reinforcement learning post-training advice usually sounds like *"pick a good reward."*
+That advice is true and useless. The reward signal is one of six knobs on an RL
+environment, and the policy you get out is a function of all six. Most of the
+pathologies people attribute to "RL being fragile" are actually a specific knob
+turned the wrong way.
+
+This is a worklog. Six chapters, six axes, one tiny env per chapter trained on
+the same model with the same recipe. For each axis we run the env once with the
+knob misconfigured, watch the policy break in a specific way, turn the knob,
+re-run, and chart the difference.
+
+## The recipe
+
+- **Model:** Qwen2.5-1.5B-Instruct.
+- **Algorithm:** GRPO via TRL.
+- **Sampling:** vLLM with regex-constrained decoding so the verifier always has
+  something parseable to grade.
+- **Compute:** one H100 on Modal per run.
+- **No env framework.** "Env" here means a prompt template, a verifier
+  function, and a regex. That's it.
+
+## The six axes
+
+1. [**Gameability**](/intuit-rl-envs/01-gameability/) — a leaky verifier the policy will route around.
+2. [**Verifiability**](/intuit-rl-envs/02-verifiability/) — binary vs. partial-credit vs. judge-model rewards.
+3. [**Shape**](/intuit-rl-envs/03-shape/) — dense vs. sparse signals and what the policy actually credit-assigns to.
+4. [**Horizon**](/intuit-rl-envs/04-horizon/) — short vs. long trajectories and γ.
+5. [**Escalation**](/intuit-rl-envs/05-escalation/) — the size of the action space and the cost of bad moves.
+6. [**Reversibility**](/intuit-rl-envs/06-reversibility/) — recoverable vs. irrecoverable transitions.

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+_runs/
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Modal
+.modal/

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "verifiability",
+    "variant": "patched",
+    "label": "binary exact-match",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 30.3,
+    "cost_usd": 12.4,
+    "seed": 1,
+    "notes": "r.eward = 1.0 iff parse_int(<answer>) == a*b else 0."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.0946,
+      "true_metric": 0.0344,
+      "kl": 0.0172,
+      "policy_entropy": 1.3953
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.0921,
+      "true_metric": 0.0612,
+      "kl": 0.0156,
+      "policy_entropy": 1.3058
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.1547,
+      "true_metric": 0.1149,
+      "kl": 0.0197,
+      "policy_entropy": 1.3168
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.1743,
+      "true_metric": 0.193,
+      "kl": 0.0309,
+      "policy_entropy": 1.236
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.1829,
+      "true_metric": 0.2312,
+      "kl": 0.0311,
+      "policy_entropy": 1.1533
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.2271,
+      "true_metric": 0.2273,
+      "kl": 0.0433,
+      "policy_entropy": 1.1978
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.2547,
+      "true_metric": 0.2791,
+      "kl": 0.036,
+      "policy_entropy": 1.0625
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.2712,
+      "true_metric": 0.2879,
+      "kl": 0.047,
+      "policy_entropy": 1.0206
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.3024,
+      "true_metric": 0.3089,
+      "kl": 0.0443,
+      "policy_entropy": 0.9753
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.3244,
+      "true_metric": 0.337,
+      "kl": 0.0568,
+      "policy_entropy": 0.8865
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.3824,
+      "true_metric": 0.3068,
+      "kl": 0.0528,
+      "policy_entropy": 0.8785
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.3653,
+      "true_metric": 0.3518,
+      "kl": 0.0574,
+      "policy_entropy": 0.8413
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.4248,
+      "true_metric": 0.3617,
+      "kl": 0.0606,
+      "policy_entropy": 0.7192
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.4338,
+      "true_metric": 0.4011,
+      "kl": 0.0699,
+      "policy_entropy": 0.6901
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.4205,
+      "true_metric": 0.4134,
+      "kl": 0.077,
+      "policy_entropy": 0.6315
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.4127,
+      "true_metric": 0.4317,
+      "kl": 0.0694,
+      "policy_entropy": 0.5778
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.4381,
+      "true_metric": 0.4281,
+      "kl": 0.0699,
+      "policy_entropy": 0.586
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.4565,
+      "true_metric": 0.4934,
+      "kl": 0.0797,
+      "policy_entropy": 0.4768
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.5064,
+      "true_metric": 0.4853,
+      "kl": 0.0848,
+      "policy_entropy": 0.3481
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.451,
+      "true_metric": 0.4887,
+      "kl": 0.0957,
+      "policy_entropy": 0.3755
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.4905,
+      "true_metric": 0.4946,
+      "kl": 0.0993,
+      "policy_entropy": 0.2933
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1786</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.6,
+      "logprob_sum": -7.0
+    },
+    {
+      "step": 100,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1786</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5,
+      "logprob_sum": -5.9
+    },
+    {
+      "step": 500,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1786</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7,
+      "logprob_sum": -3.8
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+---
+title: Shape
+description: Dense vs. sparse signals and what the policy actually credit-assigns to.
+---
+
+import TrainingCurve from '../../components/TrainingCurve.tsx';
+import RLScrubber from '../../components/RLScrubber.tsx';
+import RunMetaCard from '../../components/RunMeta.tsx';
+import leaky from '../../../public/data/shape/leaky.json';
+import patched from '../../../public/data/shape/patched.json';
+
+## The axis
+
+Shape — does the reward fire only at the end, or along the way?
+
+## The env in ~60 lines
+
+**Task.** Produce a five-step arithmetic chain of reasoning whose final line matches the target.
+
+```python
+# envs/shape/env.py
+def make_prompt(rng):
+    nums = [rng.randint(1, 9) for _ in range(5)]
+    target = sum(nums)
+    return f"Add: {nums}. Show each step then <answer>N</answer>.", nums, target
+```
+
+```python
+# envs/shape/verifier.py — DENSE variant
+def reward_dense(completion, nums, target):
+    steps = parse_steps(completion)
+    step_bonus = 0.1 * sum(check_step(s, nums) for s in steps) / len(nums)
+    terminal = 1.0 if parse_answer(completion) == target else 0.0
+    return step_bonus + terminal
+```
+
+Two variants of this env ship in `envs/shape/`:
+
+- **leaky** — final answer in `<answer>N</answer>`, terminal reward only.
+- **patched** — per-step regex check on each intermediate line, dense reward.
+
+## First run — leaky
+
+<RunMetaCard meta={leaky.meta} client:load />
+
+<TrainingCurve curve={leaky.curve} client:load />
+
+## What broke
+
+With only terminal reward, the policy learns to write whatever string happens to precede correct final answers in its base distribution. The visible chain-of-thought becomes decorative — randomly shuffling the intermediate lines barely changes reward.
+
+<RLScrubber rollouts={leaky.rollouts} client:load />
+
+## The fix
+
+Add a shaping term that checks each intermediate arithmetic step against the prior line. The shaping reward is small (0.1× the terminal) so it doesn't dominate, just disambiguates.
+
+## Re-run — patched
+
+<RunMetaCard meta={patched.meta} client:load />
+
+<TrainingCurve curve={patched.curve} client:load />
+
+Final accuracy and per-step validity climb together. Shuffling intermediates now collapses reward, confirming the policy is using them.
+
+<div class="worklog-claim">Dense shaping is not a hyperparameter tweak — it changes what part of the completion the policy treats as load-bearing.</div>

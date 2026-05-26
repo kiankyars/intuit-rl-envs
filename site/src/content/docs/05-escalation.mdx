@@ -1,0 +1,63 @@
+---
+title: Escalation
+description: The size of the action space and the cost of bad moves.
+---
+
+import TrainingCurve from '../../components/TrainingCurve.tsx';
+import RLScrubber from '../../components/RLScrubber.tsx';
+import RunMetaCard from '../../components/RunMeta.tsx';
+import leaky from '../../../public/data/escalation/leaky.json';
+import patched from '../../../public/data/escalation/patched.json';
+
+## The axis
+
+Escalation — how wide is the action space the policy must sample from?
+
+## The env in ~60 lines
+
+**Task.** Pick the right tool from a list of N to answer a small factual query; tool name must appear in `<tool>...</tool>`.
+
+```python
+# envs/escalation/env.py
+def make_prompt(query, tools):
+    listing = "\n".join(f"- {t.name}: {t.desc}" for t in tools)
+    return f"Tools:\n{listing}\nQuery: {query}\nReply <tool>NAME</tool>."
+```
+
+```python
+# envs/escalation/verifier.py
+def reward(completion, correct_tool):
+    m = TOOL_RE.search(completion)
+    return 1.0 if m and m.group(1).strip() == correct_tool else 0.0
+```
+
+Two variants of this env ship in `envs/escalation/`:
+
+- **leaky** — `<tool>(.+?)</tool>` over 64 tools, all candidate names admitted.
+- **patched** — same regex constrained to a 4-tool shortlist computed from the query.
+
+## First run — leaky
+
+<RunMetaCard meta={leaky.meta} client:load />
+
+<TrainingCurve curve={leaky.curve} client:load />
+
+## What broke
+
+With 64 candidate tools the policy's per-token entropy over tool names is ~6 bits. Most rollouts pick a wrong tool, reward is sparse, and GRPO's advantage estimator drifts because the few correct rollouts dominate the batch unevenly.
+
+<RLScrubber rollouts={leaky.rollouts} client:load />
+
+## The fix
+
+Pre-filter to a 4-tool shortlist via a cheap embedding lookup before the policy samples. The action space the policy actually faces drops from 64 to 4, but the *task* is unchanged.
+
+## Re-run — patched
+
+<RunMetaCard meta={patched.meta} client:load />
+
+<TrainingCurve curve={patched.curve} client:load />
+
+Reward climbs immediately and smoothly. The retrieval step is doing the exploration the policy can't do at this scale.
+
+<div class="worklog-claim">A 1.5B-param policy cannot do exploration in a 64-action space within 500 GRPO steps. Shrink the space; do not 'help the model explore.'</div>

@@ -1,0 +1,64 @@
+---
+title: Verifiability
+description: Binary vs. partial-credit vs. judge-model rewards.
+---
+
+import TrainingCurve from '../../components/TrainingCurve.tsx';
+import RLScrubber from '../../components/RLScrubber.tsx';
+import RunMetaCard from '../../components/RunMeta.tsx';
+import leaky from '../../../public/data/verifiability/leaky.json';
+import patched from '../../../public/data/verifiability/patched.json';
+
+## The axis
+
+Verifiability — how trustworthy is the scalar the policy is climbing?
+
+## The env in ~60 lines
+
+**Task.** Multiply two two-digit numbers and emit the product in `<answer>...</answer>`.
+
+```python
+# envs/verifiability/env.py
+def make_prompt(rng):
+    a, b = rng.randint(10, 99), rng.randint(10, 99)
+    return f"What is {a} * {b}? Reply with <answer>N</answer>.", a * b
+```
+
+```python
+# envs/verifiability/verifier.py — LEAKY variant uses LLM judge
+def reward_judge(completion, target, judge):
+    pred = parse_answer(completion)
+    if pred is None: return 0.0
+    return float(judge.score(pred, target))  # ∈ [0, 1], soft
+```
+
+Two variants of this env ship in `envs/verifiability/`:
+
+- **leaky** — `<answer>\s*-?\d+\s*</answer>` with an LLM-judge reward.
+- **patched** — same regex with binary exact-match.
+
+## First run — leaky
+
+<RunMetaCard meta={leaky.meta} client:load />
+
+<TrainingCurve curve={leaky.curve} client:load />
+
+## What broke
+
+The judge model (a second copy of the policy) gives partial credit for 'close' numerical answers. The policy quickly learns to emit numbers within ±10 of the true product because that's the convex hull of where the judge stops penalizing — and stays there. The judge-reward curve looks healthy. The true exact-match curve plateaus near 0.
+
+<RLScrubber rollouts={leaky.rollouts} client:load />
+
+## The fix
+
+Replace the judge with binary exact-match. Reward gets sparser, KL-from-base rises, but the metric you care about starts moving.
+
+## Re-run — patched
+
+<RunMetaCard meta={patched.meta} client:load />
+
+<TrainingCurve curve={patched.curve} client:load />
+
+Verifier reward and true accuracy become the same curve. They climb slower than the judge curve did, but they climb honestly.
+
+<div class="worklog-claim">A noisy partial-credit reward will outrun a binary reward on the proxy metric and lose on the true metric — every time.</div>

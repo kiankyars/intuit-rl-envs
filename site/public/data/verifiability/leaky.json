@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "slug": "verifiability",
+    "variant": "leaky",
+    "label": "LLM-judge partial credit",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 31.0,
+    "cost_usd": 12.7,
+    "seed": 1,
+    "notes": "Judge is a frozen copy of base model. Scores \u2208 [0, 1]."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.2471,
+      "true_metric": 0.0488,
+      "kl": 0.0098,
+      "policy_entropy": 1.3729
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.3492,
+      "true_metric": 0.0571,
+      "kl": 0.0133,
+      "policy_entropy": 1.4191
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.3956,
+      "true_metric": 0.0682,
+      "kl": 0.0073,
+      "policy_entropy": 1.3462
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.4488,
+      "true_metric": 0.0367,
+      "kl": 0.0164,
+      "policy_entropy": 1.206
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.4958,
+      "true_metric": 0.0749,
+      "kl": 0.0233,
+      "policy_entropy": 1.1802
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.5591,
+      "true_metric": 0.0753,
+      "kl": 0.0193,
+      "policy_entropy": 1.1028
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.6244,
+      "true_metric": 0.0467,
+      "kl": 0.0206,
+      "policy_entropy": 1.0856
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.6338,
+      "true_metric": 0.0476,
+      "kl": 0.0267,
+      "policy_entropy": 1.0071
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.6547,
+      "true_metric": 0.0752,
+      "kl": 0.0334,
+      "policy_entropy": 0.9907
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.6689,
+      "true_metric": 0.0746,
+      "kl": 0.0329,
+      "policy_entropy": 0.8428
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.6988,
+      "true_metric": 0.0756,
+      "kl": 0.0261,
+      "policy_entropy": 0.8613
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.7606,
+      "true_metric": 0.0516,
+      "kl": 0.0448,
+      "policy_entropy": 0.9021
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.7452,
+      "true_metric": 0.0738,
+      "kl": 0.0377,
+      "policy_entropy": 0.6528
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.7401,
+      "true_metric": 0.0999,
+      "kl": 0.0411,
+      "policy_entropy": 0.704
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.7762,
+      "true_metric": 0.0837,
+      "kl": 0.0477,
+      "policy_entropy": 0.597
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.795,
+      "true_metric": 0.0933,
+      "kl": 0.0415,
+      "policy_entropy": 0.5258
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.7852,
+      "true_metric": 0.1444,
+      "kl": 0.0579,
+      "policy_entropy": 0.5546
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.7966,
+      "true_metric": 0.0975,
+      "kl": 0.0517,
+      "policy_entropy": 0.4976
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.8201,
+      "true_metric": 0.0566,
+      "kl": 0.0591,
+      "policy_entropy": 0.4371
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.8045,
+      "true_metric": 0.0825,
+      "kl": 0.0603,
+      "policy_entropy": 0.3375
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.8259,
+      "true_metric": 0.1007,
+      "kl": 0.0573,
+      "policy_entropy": 0.2652
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1786</answer>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.4,
+      "logprob_sum": -7.3
+    },
+    {
+      "step": 100,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1790</answer>",
+      "reward": 0.85,
+      "true_score": 0.0,
+      "advantage": 0.3,
+      "logprob_sum": -5.1
+    },
+    {
+      "step": 250,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1780</answer>",
+      "reward": 0.9,
+      "true_score": 0.0,
+      "advantage": 0.4,
+      "logprob_sum": -4.6
+    },
+    {
+      "step": 500,
+      "prompt": "What is 47 * 38?",
+      "completion": "<answer>1785</answer>",
+      "reward": 0.95,
+      "true_score": 0.0,
+      "advantage": 0.5,
+      "logprob_sum": -3.9
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[project]
+name = "intuit-rl-envs"
+version = "0.1.0"
+description = "Six axes of an RL environment — worklog companion repo."
+requires-python = ">=3.11"
+dependencies = [
+  "torch>=2.5",
+  "transformers>=4.48",
+  "trl>=0.14",
+  "accelerate>=1.2",
+  "datasets>=3.0",
+  "vllm>=0.7",
+  "outlines>=0.1",
+  "modal>=0.66",
+]
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["envs*"]

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "slug": "escalation",
+    "variant": "patched",
+    "label": "4-tool shortlist via embedding retrieval",
+    "model": "Qwen2.5-1.5B-Instruct",
+    "steps": 500,
+    "batch_size": 32,
+    "h100_minutes": 29.1,
+    "cost_usd": 11.9,
+    "seed": 4,
+    "notes": "Top-4 by cosine sim of query vs. tool description."
+  },
+  "curve": [
+    {
+      "step": 0,
+      "reward_mean": 0.1188,
+      "true_metric": 0.1578,
+      "kl": 0.0187,
+      "policy_entropy": 1.416
+    },
+    {
+      "step": 25,
+      "reward_mean": 0.2903,
+      "true_metric": 0.2653,
+      "kl": 0.014,
+      "policy_entropy": 1.3534
+    },
+    {
+      "step": 50,
+      "reward_mean": 0.3968,
+      "true_metric": 0.3889,
+      "kl": 0.0054,
+      "policy_entropy": 1.3246
+    },
+    {
+      "step": 75,
+      "reward_mean": 0.4475,
+      "true_metric": 0.4579,
+      "kl": 0.01,
+      "policy_entropy": 1.2573
+    },
+    {
+      "step": 100,
+      "reward_mean": 0.5309,
+      "true_metric": 0.5232,
+      "kl": 0.0225,
+      "policy_entropy": 1.2115
+    },
+    {
+      "step": 125,
+      "reward_mean": 0.6186,
+      "true_metric": 0.6197,
+      "kl": 0.0265,
+      "policy_entropy": 1.1145
+    },
+    {
+      "step": 150,
+      "reward_mean": 0.6203,
+      "true_metric": 0.6538,
+      "kl": 0.0236,
+      "policy_entropy": 1.1065
+    },
+    {
+      "step": 175,
+      "reward_mean": 0.694,
+      "true_metric": 0.705,
+      "kl": 0.0211,
+      "policy_entropy": 1.0296
+    },
+    {
+      "step": 200,
+      "reward_mean": 0.7124,
+      "true_metric": 0.7241,
+      "kl": 0.0303,
+      "policy_entropy": 0.975
+    },
+    {
+      "step": 225,
+      "reward_mean": 0.7624,
+      "true_metric": 0.7515,
+      "kl": 0.0321,
+      "policy_entropy": 0.8824
+    },
+    {
+      "step": 250,
+      "reward_mean": 0.7815,
+      "true_metric": 0.8204,
+      "kl": 0.0306,
+      "policy_entropy": 0.8084
+    },
+    {
+      "step": 275,
+      "reward_mean": 0.773,
+      "true_metric": 0.8086,
+      "kl": 0.0427,
+      "policy_entropy": 0.8249
+    },
+    {
+      "step": 300,
+      "reward_mean": 0.8568,
+      "true_metric": 0.8548,
+      "kl": 0.0353,
+      "policy_entropy": 0.7748
+    },
+    {
+      "step": 325,
+      "reward_mean": 0.8416,
+      "true_metric": 0.8219,
+      "kl": 0.0442,
+      "policy_entropy": 0.7407
+    },
+    {
+      "step": 350,
+      "reward_mean": 0.8663,
+      "true_metric": 0.889,
+      "kl": 0.0433,
+      "policy_entropy": 0.6105
+    },
+    {
+      "step": 375,
+      "reward_mean": 0.8661,
+      "true_metric": 0.8655,
+      "kl": 0.0518,
+      "policy_entropy": 0.6231
+    },
+    {
+      "step": 400,
+      "reward_mean": 0.8713,
+      "true_metric": 0.8823,
+      "kl": 0.049,
+      "policy_entropy": 0.5165
+    },
+    {
+      "step": 425,
+      "reward_mean": 0.9111,
+      "true_metric": 0.9119,
+      "kl": 0.0584,
+      "policy_entropy": 0.4596
+    },
+    {
+      "step": 450,
+      "reward_mean": 0.9353,
+      "true_metric": 0.9208,
+      "kl": 0.0567,
+      "policy_entropy": 0.3592
+    },
+    {
+      "step": 475,
+      "reward_mean": 0.8838,
+      "true_metric": 0.8987,
+      "kl": 0.0593,
+      "policy_entropy": 0.4024
+    },
+    {
+      "step": 500,
+      "reward_mean": 0.931,
+      "true_metric": 0.8865,
+      "kl": 0.056,
+      "policy_entropy": 0.3319
+    }
+  ],
+  "rollouts": [
+    {
+      "step": 0,
+      "prompt": "Query: capital of Peru. Tools: [wiki, dict, news, web]",
+      "completion": "<tool>wiki_search</tool>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.4,
+      "logprob_sum": -3.9
+    },
+    {
+      "step": 250,
+      "prompt": "Query: capital of Peru. Tools: [wiki, dict, news, web]",
+      "completion": "<tool>wiki_search</tool>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.6,
+      "logprob_sum": -2.4
+    },
+    {
+      "step": 500,
+      "prompt": "Query: capital of Peru. Tools: [wiki, dict, news, web]",
+      "completion": "<tool>wiki_search</tool>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.6,
+      "logprob_sum": -1.8
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+:root {
+  --chart-true: #0ea5e9;
+  --chart-proxy: #f97316;
+  --chart-grid: var(--sl-color-gray-5);
+  --chart-axis: var(--sl-color-gray-2);
+}
+
+.worklog-claim {
+  border-left: 3px solid var(--sl-color-accent);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background: var(--sl-color-gray-6);
+  font-weight: 600;
+}
+
+.run-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-family: var(--sl-font-mono);
+  font-size: 0.85rem;
+}
+
+.run-meta div {
+  border: 1px solid var(--sl-color-gray-5);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.run-meta span {
+  display: block;
+  color: var(--sl-color-gray-3);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
