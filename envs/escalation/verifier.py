@@ -1,7 +1,7 @@
 import re
 
 TOOL_RE = re.compile(r"<tool>\s*([a-zA-Z0-9_]+)\s*</tool>")
-ANSWER_REGEX = r"<tool>\s*[a-zA-Z0-9_]+\s*</tool>"
+ANSWER_REGEX = r"<tool>\s*tool_\d{2}\s*</tool>"
 
 
 def reward(completion: str, record: dict) -> float:

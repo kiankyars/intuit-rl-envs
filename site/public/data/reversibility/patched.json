@@ -3,190 +3,1596 @@
     "slug": "reversibility",
     "variant": "patched",
     "label": "apply() + revert() available",
-    "model": "Qwen2.5-1.5B-Instruct",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
     "steps": 500,
-    "batch_size": 32,
-    "h100_minutes": 32.7,
-    "cost_usd": 13.4,
+    "batch_size": 8,
+    "h100_minutes": 4.373991533120473,
+    "cost_usd": 0.28868344118595124,
     "seed": 5,
-    "notes": "Failed apply() can be undone with revert()."
+    "notes": "Failed apply() is silently skipped; revert() unwinds last successful apply."
   },
   "curve": [
     {
-      "step": 0,
-      "reward_mean": 0.0773,
-      "true_metric": 0.0839,
-      "kl": 0.0072,
-      "policy_entropy": 1.4045
-    },
-    {
       "step": 25,
-      "reward_mean": 0.1449,
-      "true_metric": 0.148,
-      "kl": 0.0153,
-      "policy_entropy": 1.2992
+      "reward_mean": 0.9023369550704956,
+      "true_metric": 0.9782608695652174,
+      "kl": 0.0882435274636373,
+      "policy_entropy": 0.3860973334312439
     },
     {
       "step": 50,
-      "reward_mean": 0.2545,
-      "true_metric": 0.2167,
-      "kl": 0.0171,
-      "policy_entropy": 1.2929
+      "reward_mean": 0.9763768172264099,
+      "true_metric": 0.9782608695652174,
+      "kl": 0.20930118799209596,
+      "policy_entropy": 0.10068494945764542
     },
     {
       "step": 75,
-      "reward_mean": 0.2525,
-      "true_metric": 0.2665,
-      "kl": 0.0179,
-      "policy_entropy": 1.263
+      "reward_mean": 0.9789039969444275,
+      "true_metric": 0.9836956521739131,
+      "kl": 0.2033673569560051,
+      "policy_entropy": 0.06951014325022697
     },
     {
       "step": 100,
-      "reward_mean": 0.296,
-      "true_metric": 0.2775,
-      "kl": 0.0193,
-      "policy_entropy": 1.2147
+      "reward_mean": 0.969646737575531,
+      "true_metric": 1.0,
+      "kl": 0.15779533058404924,
+      "policy_entropy": 0.06763805478811263
     },
     {
       "step": 125,
-      "reward_mean": 0.3226,
-      "true_metric": 0.3469,
-      "kl": 0.0276,
-      "policy_entropy": 1.1028
+      "reward_mean": 0.9768840575218201,
+      "true_metric": 0.9836956521739131,
+      "kl": 0.14280234545469284,
+      "policy_entropy": 0.07171011820435524
     },
     {
       "step": 150,
-      "reward_mean": 0.4048,
-      "true_metric": 0.3658,
-      "kl": 0.0215,
-      "policy_entropy": 1.06
+      "reward_mean": 0.9769746470451355,
+      "true_metric": 0.9782608695652174,
+      "kl": 0.14002023339271547,
+      "policy_entropy": 0.06932909950613976
     },
     {
       "step": 175,
-      "reward_mean": 0.3935,
-      "true_metric": 0.3817,
-      "kl": 0.0266,
-      "policy_entropy": 0.985
+      "reward_mean": 0.9832246398925781,
+      "true_metric": 0.9565217391304348,
+      "kl": 0.126829584389925,
+      "policy_entropy": 0.07075287513434887
     },
     {
       "step": 200,
-      "reward_mean": 0.4263,
-      "true_metric": 0.4305,
-      "kl": 0.0299,
-      "policy_entropy": 0.9521
+      "reward_mean": 0.9807065272331238,
+      "true_metric": 1.0,
+      "kl": 0.1739815977215767,
+      "policy_entropy": 0.07394959211349487
     },
     {
       "step": 225,
-      "reward_mean": 0.4449,
-      "true_metric": 0.4321,
-      "kl": 0.0332,
-      "policy_entropy": 0.8805
+      "reward_mean": 0.9843025350570679,
+      "true_metric": 0.9739583333333334,
+      "kl": 0.14926549151539803,
+      "policy_entropy": 0.06717670321464539
     },
     {
       "step": 250,
-      "reward_mean": 0.4739,
-      "true_metric": 0.4667,
-      "kl": 0.0305,
-      "policy_entropy": 0.845
+      "reward_mean": 0.9753079867362976,
+      "true_metric": 1.0,
+      "kl": 0.0997842888534069,
+      "policy_entropy": 0.04982679359614849
     },
     {
       "step": 275,
-      "reward_mean": 0.5532,
-      "true_metric": 0.4931,
-      "kl": 0.0391,
-      "policy_entropy": 0.8325
+      "reward_mean": 0.9909239149093628,
+      "true_metric": 0.9565217391304348,
+      "kl": 0.119527687728405,
+      "policy_entropy": 0.0280851985886693
     },
     {
       "step": 300,
-      "reward_mean": 0.4941,
-      "true_metric": 0.5655,
-      "kl": 0.0459,
-      "policy_entropy": 0.7218
+      "reward_mean": 0.9803170347213745,
+      "true_metric": 1.0,
+      "kl": 0.0985676695406437,
+      "policy_entropy": 0.030238733142614365
     },
     {
       "step": 325,
-      "reward_mean": 0.5308,
-      "true_metric": 0.5068,
-      "kl": 0.0358,
-      "policy_entropy": 0.7382
+      "reward_mean": 0.9806431198120117,
+      "true_metric": 0.9739583333333334,
+      "kl": 0.1296828280389309,
+      "policy_entropy": 0.03264725536108017
     },
     {
       "step": 350,
-      "reward_mean": 0.5665,
-      "true_metric": 0.5415,
-      "kl": 0.045,
-      "policy_entropy": 0.6259
+      "reward_mean": 0.9832880425453187,
+      "true_metric": 0.967391304347826,
+      "kl": 0.10860468700528145,
+      "policy_entropy": 0.036526728086173535
     },
     {
       "step": 375,
-      "reward_mean": 0.5766,
-      "true_metric": 0.5425,
-      "kl": 0.052,
-      "policy_entropy": 0.5666
+      "reward_mean": 0.9908786273002624,
+      "true_metric": 0.9565217391304348,
+      "kl": 0.08812310472130776,
+      "policy_entropy": 0.04002632454037666
     },
     {
       "step": 400,
-      "reward_mean": 0.5664,
-      "true_metric": 0.5663,
-      "kl": 0.0514,
-      "policy_entropy": 0.4802
+      "reward_mean": 0.9690308022499085,
+      "true_metric": 0.984375,
+      "kl": 0.12681557416915892,
+      "policy_entropy": 0.10669671103358269
     },
     {
       "step": 425,
-      "reward_mean": 0.5913,
-      "true_metric": 0.5903,
-      "kl": 0.0534,
-      "policy_entropy": 0.4719
+      "reward_mean": 0.9822373223304749,
+      "true_metric": 0.9836956521739131,
+      "kl": 0.16652054771780966,
+      "policy_entropy": 0.05871059790253639
     },
     {
       "step": 450,
-      "reward_mean": 0.6332,
-      "true_metric": 0.6336,
-      "kl": 0.0604,
-      "policy_entropy": 0.3991
+      "reward_mean": 0.985380437374115,
+      "true_metric": 0.9347826086956522,
+      "kl": 0.13090043544769286,
+      "policy_entropy": 0.07471249803900719
     },
     {
       "step": 475,
-      "reward_mean": 0.6451,
-      "true_metric": 0.5981,
-      "kl": 0.059,
-      "policy_entropy": 0.306
+      "reward_mean": 0.9761050724983216,
+      "true_metric": 0.9739583333333334,
+      "kl": 0.08957450121641158,
+      "policy_entropy": 0.08271509818732739
     },
     {
       "step": 500,
-      "reward_mean": 0.6284,
-      "true_metric": 0.6421,
-      "kl": 0.0491,
-      "policy_entropy": 0.3338
+      "reward_mean": 0.981666669845581,
+      "true_metric": 0.0,
+      "kl": 0.11397454082965851,
+      "policy_entropy": 0.06791232421994209
     }
   ],
   "rollouts": [
     {
       "step": 0,
-      "prompt": "Make edits.",
-      "completion": "apply(p1) revert() apply(p2)",
-      "reward": 0.15,
-      "true_score": 0.15,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the' -> 'the')\napply('quick' -> 'slow')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.6201851746019647,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('SOURCE'->'TARGET')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('SOURCE'->'TARGET')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -0.540061724867322,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.6201851746019647,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')\napply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')\napply('the quick brown fox' -> 'the quick red fox')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8695652173913043,
+      "true_score": 0.8695652173913043,
+      "advantage": -2.4748737341529172,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
       "advantage": 0.0,
-      "logprob_sum": -12.6
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the' -> 'a')\napply('quick' -> 'quick')\napply('brown' -> 'brown')\napply('fox jumps' -> 'fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox jumps'->'fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox jumps'->'fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8695652173913043,
+      "true_score": 0.8695652173913043,
+      "advantage": -2.4748737341529172,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the' -> 'a')\napply('quick' -> 'quick')\napply('brown' -> 'brown')\napply('fox' -> 'fox')\napply('jumps' -> 'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327356,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
     },
     {
       "step": 250,
-      "prompt": "Make edits.",
-      "completion": "apply(p1) apply(p2) apply(p3)",
-      "reward": 0.55,
-      "true_score": 0.55,
-      "advantage": 0.6,
-      "logprob_sum": -16.8
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
     },
     {
-      "step": 500,
-      "prompt": "Make edits.",
-      "completion": "apply(p1) apply(p2) apply(p3) apply(p4)",
-      "reward": 0.72,
-      "true_score": 0.72,
-      "advantage": 0.7,
-      "logprob_sum": -18.4
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply(' jumps'->' jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply(' the ' -> ' a ')</assistant>",
+      "reward": 0.8695652173913043,
+      "true_score": 0.8695652173913043,
+      "advantage": -1.6201851746019647,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8695652173913043,
+      "true_score": 0.8695652173913043,
+      "advantage": -1.6201851746019647,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'a quick brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'a')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673222,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673214,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.6201851746019655,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick brown fox runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'runs')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick brown fox runs'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'quick')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')\napply('the'->'the')\napply('quick'->'quick')</assistant>",
+      "reward": 0.875,
+      "true_score": 0.875,
+      "advantage": -2.4748737341529163,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps'->'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('SOURCE'->'TARGET')\napply('quick'->'quickred')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 0.8695652173913043,
+      "true_score": 0.8695652173913043,
+      "advantage": -2.4748737341529172,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'quick')\napply('brown'->'red')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327284,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.2076147288491201,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7245688373094714,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7245688373094714,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7245688373094714,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.2076147288491201,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7245688373094714,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.8260869565217391,
+      "true_score": 0.8260869565217391,
+      "advantage": -1.2076147288491201,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the quick red fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the quick red fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.7245688373094714,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')</assistant>",
+      "reward": 0.7916666666666666,
+      "true_score": 0.7916666666666666,
+      "advantage": -2.474873734152917,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the slow brown fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the quick brown fox jumps' -> 'the slow brown fox jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Source: 'the quick brown fox jumps'\nTarget: 'the slow brown fox jumps'\nEmit a sequence of apply('OLD'->'NEW') calls (one per line) to transform source into target. End when done.</user>",
+      "completion": "<assistant>apply('OLD'->'NEW')\napply('the'->'the')\napply('quick'->'slow')\napply('brown'->'brown')\napply('fox'->'fox')\napply('jumps'->'jumps')</assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.3535533905932732,
+      "logprob_sum": 0.0
     }
   ]
 }

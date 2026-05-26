@@ -1,24 +1,21 @@
-"""Two-room key-then-door gridworld, emitted as a single completion of action chars.
+"""Tiny key-then-door gridworld, emitted as a single completion of action chars.
 
-Layout (3×5):
-    . . . D .
-    . . . . .
-    K . . . S   (S = start, K = key, D = door)
+Layout (2×3):
+    K . D
+    . . S    (S = start, K = key, D = door)
 
-Optimal path: 4 W + 1 N + 4 E + 1 N = 6 actions if read as a Manhattan path,
-but the key/door require a detour, so the real optimum sits around 7–8.
-A horizon of 8 leaves the base policy nearly no slack; horizon 24 gives it
-room to stumble.
+Optimal: W W N E E (5 actions). At H=4 the model literally cannot win;
+at H=12 it has slack to explore. That gap is the horizon axis.
 """
 
 import random
 from typing import Iterator
 
 
-GRID_W, GRID_H = 5, 3
-START = (4, 2)
-KEY = (0, 2)
-DOOR = (3, 0)
+GRID_W, GRID_H = 3, 2
+START = (2, 1)
+KEY = (0, 0)
+DOOR = (2, 0)
 
 
 def _layout_text() -> str:

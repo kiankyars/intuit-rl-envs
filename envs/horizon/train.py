@@ -6,23 +6,21 @@ def run(variant: str = "leaky") -> str:
     if variant == "leaky":
         cfg = RunConfig(
             slug="horizon", variant="leaky",
-            label="horizon H=8, terminal only",
-            regex=r"[NSEW]{1,8}",
-            seed=3, max_completion_tokens=16,
-            temperature=0.7,
-            notes="Optimal path is 6–7 actions; base policy can't reliably find it inside H=8.",
+            label="horizon H=4 (optimal=5; unwinnable)",
+            regex=r"[NSEW]{1,4}",
+            seed=3, max_completion_tokens=8,
+            temperature=1.0,
+            notes="3x2 grid, optimal path is 5 actions; H=4 makes the task unwinnable.",
         )
         fn = verifier.reward_leaky
     else:
-        # No explicit entropy bonus in TRL; bump temperature instead so
-        # exploration stays alive while the policy stumbles into reward.
         cfg = RunConfig(
             slug="horizon", variant="patched",
-            label="horizon H=24 + higher sampling temperature",
-            regex=r"[NSEW]{1,24}",
-            seed=3, max_completion_tokens=32,
-            temperature=1.1,
-            notes="Same env, H=24, temperature 1.1 (TRL has no entropy_coef; temp is the lever).",
+            label="horizon H=12 (5x slack on optimal)",
+            regex=r"[NSEW]{1,12}",
+            seed=3, max_completion_tokens=24,
+            temperature=1.0,
+            notes="Same grid, H=12; gives the policy ~6 actions of exploration slack.",
         )
         fn = verifier.reward_patched
     prompts = list(env.stream(n=512, seed=cfg.seed))

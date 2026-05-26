@@ -3,190 +3,1596 @@
     "slug": "verifiability",
     "variant": "patched",
     "label": "binary exact-match",
-    "model": "Qwen2.5-1.5B-Instruct",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
     "steps": 500,
-    "batch_size": 32,
-    "h100_minutes": 30.3,
-    "cost_usd": 12.4,
+    "batch_size": 8,
+    "h100_minutes": 4.9530394077301025,
+    "cost_usd": 0.3269006009101868,
     "seed": 1,
-    "notes": "r.eward = 1.0 iff parse_int(<answer>) == a*b else 0."
+    "notes": "Reward = 1[parsed_int == a*b]."
   },
   "curve": [
     {
-      "step": 0,
-      "reward_mean": 0.0946,
-      "true_metric": 0.0344,
-      "kl": 0.0172,
-      "policy_entropy": 1.3953
-    },
-    {
       "step": 25,
-      "reward_mean": 0.0921,
-      "true_metric": 0.0612,
-      "kl": 0.0156,
-      "policy_entropy": 1.3058
+      "reward_mean": 0.745,
+      "true_metric": 0.0,
+      "kl": 0.033822031293530015,
+      "policy_entropy": 0.18805804908275603
     },
     {
       "step": 50,
-      "reward_mean": 0.1547,
-      "true_metric": 0.1149,
-      "kl": 0.0197,
-      "policy_entropy": 1.3168
+      "reward_mean": 0.57,
+      "true_metric": 1.0,
+      "kl": 0.024519183592638,
+      "policy_entropy": 0.2328858870267868
     },
     {
       "step": 75,
-      "reward_mean": 0.1743,
-      "true_metric": 0.193,
-      "kl": 0.0309,
-      "policy_entropy": 1.236
+      "reward_mean": 0.695,
+      "true_metric": 0.875,
+      "kl": 0.051071606393670664,
+      "policy_entropy": 0.21591593265533449
     },
     {
       "step": 100,
-      "reward_mean": 0.1829,
-      "true_metric": 0.2312,
-      "kl": 0.0311,
-      "policy_entropy": 1.1533
+      "reward_mean": 0.62,
+      "true_metric": 1.0,
+      "kl": 0.024135734848891845,
+      "policy_entropy": 0.21894111454486848
     },
     {
       "step": 125,
-      "reward_mean": 0.2271,
-      "true_metric": 0.2273,
-      "kl": 0.0433,
-      "policy_entropy": 1.1978
+      "reward_mean": 0.755,
+      "true_metric": 0.0,
+      "kl": 0.04258554270025343,
+      "policy_entropy": 0.1936417677998543
     },
     {
       "step": 150,
-      "reward_mean": 0.2547,
-      "true_metric": 0.2791,
-      "kl": 0.036,
-      "policy_entropy": 1.0625
+      "reward_mean": 0.57,
+      "true_metric": 0.875,
+      "kl": 0.03369968350045383,
+      "policy_entropy": 0.24885603100061415
     },
     {
       "step": 175,
-      "reward_mean": 0.2712,
-      "true_metric": 0.2879,
-      "kl": 0.047,
-      "policy_entropy": 1.0206
+      "reward_mean": 0.665,
+      "true_metric": 0.0,
+      "kl": 0.031761254677549006,
+      "policy_entropy": 0.1859931743144989
     },
     {
       "step": 200,
-      "reward_mean": 0.3024,
-      "true_metric": 0.3089,
-      "kl": 0.0443,
-      "policy_entropy": 0.9753
+      "reward_mean": 0.68,
+      "true_metric": 0.375,
+      "kl": 0.03393113607307896,
+      "policy_entropy": 0.17863239020109176
     },
     {
       "step": 225,
-      "reward_mean": 0.3244,
-      "true_metric": 0.337,
-      "kl": 0.0568,
-      "policy_entropy": 0.8865
+      "reward_mean": 0.685,
+      "true_metric": 0.0,
+      "kl": 0.024667979553341865,
+      "policy_entropy": 0.22967641711235046
     },
     {
       "step": 250,
-      "reward_mean": 0.3824,
-      "true_metric": 0.3068,
-      "kl": 0.0528,
-      "policy_entropy": 0.8785
+      "reward_mean": 0.685,
+      "true_metric": 1.0,
+      "kl": 0.027897875115741044,
+      "policy_entropy": 0.20891906052827836
     },
     {
       "step": 275,
-      "reward_mean": 0.3653,
-      "true_metric": 0.3518,
-      "kl": 0.0574,
-      "policy_entropy": 0.8413
+      "reward_mean": 0.61,
+      "true_metric": 1.0,
+      "kl": 0.028724703467451037,
+      "policy_entropy": 0.25717939794063566
     },
     {
       "step": 300,
-      "reward_mean": 0.4248,
-      "true_metric": 0.3617,
-      "kl": 0.0606,
-      "policy_entropy": 0.7192
+      "reward_mean": 0.745,
+      "true_metric": 1.0,
+      "kl": 0.026724658763196203,
+      "policy_entropy": 0.21034010946750642
     },
     {
       "step": 325,
-      "reward_mean": 0.4338,
-      "true_metric": 0.4011,
-      "kl": 0.0699,
-      "policy_entropy": 0.6901
+      "reward_mean": 0.535,
+      "true_metric": 1.0,
+      "kl": 0.03631780554074794,
+      "policy_entropy": 0.2449137330055237
     },
     {
       "step": 350,
-      "reward_mean": 0.4205,
-      "true_metric": 0.4134,
-      "kl": 0.077,
-      "policy_entropy": 0.6315
+      "reward_mean": 0.575,
+      "true_metric": 1.0,
+      "kl": 0.029559768724720926,
+      "policy_entropy": 0.23357105672359466
     },
     {
       "step": 375,
-      "reward_mean": 0.4127,
-      "true_metric": 0.4317,
-      "kl": 0.0694,
-      "policy_entropy": 0.5778
+      "reward_mean": 0.55,
+      "true_metric": 0.875,
+      "kl": 0.017315142825245856,
+      "policy_entropy": 0.2478457522392273
     },
     {
       "step": 400,
-      "reward_mean": 0.4381,
-      "true_metric": 0.4281,
-      "kl": 0.0699,
-      "policy_entropy": 0.586
+      "reward_mean": 0.54,
+      "true_metric": 0.625,
+      "kl": 0.014801994205918163,
+      "policy_entropy": 0.2492825895547867
     },
     {
       "step": 425,
-      "reward_mean": 0.4565,
-      "true_metric": 0.4934,
-      "kl": 0.0797,
-      "policy_entropy": 0.4768
+      "reward_mean": 0.72,
+      "true_metric": 0.5,
+      "kl": 0.017807174262270565,
+      "policy_entropy": 0.22136262744665147
     },
     {
       "step": 450,
-      "reward_mean": 0.5064,
-      "true_metric": 0.4853,
-      "kl": 0.0848,
-      "policy_entropy": 0.3481
+      "reward_mean": 0.52,
+      "true_metric": 1.0,
+      "kl": 0.020103924612049014,
+      "policy_entropy": 0.24587964236736298
     },
     {
       "step": 475,
-      "reward_mean": 0.451,
-      "true_metric": 0.4887,
-      "kl": 0.0957,
-      "policy_entropy": 0.3755
+      "reward_mean": 0.535,
+      "true_metric": 0.0,
+      "kl": 0.014129038744576973,
+      "policy_entropy": 0.24081332683563234
     },
     {
       "step": 500,
-      "reward_mean": 0.4905,
-      "true_metric": 0.4946,
-      "kl": 0.0993,
-      "policy_entropy": 0.2933
+      "reward_mean": 0.665,
+      "true_metric": 0.0,
+      "kl": 0.01220726216211915,
+      "policy_entropy": 0.24110644549131394
     }
   ],
   "rollouts": [
     {
       "step": 0,
-      "prompt": "What is 47 * 38?",
-      "completion": "<answer>1786</answer>",
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6015</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5985</answer></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.6,
-      "logprob_sum": -7.0
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6015</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5985</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6015</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5985</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5985</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>What is 63 * 95? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5985</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3369</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3401</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3309</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3369</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3309</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3387</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3369</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>What is 53 * 63? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3369</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>What is 53 * 31? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1643</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5440</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>What is 85 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>5360</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -2.4748737341529163,
+      "logprob_sum": 0.0
     },
     {
       "step": 100,
-      "prompt": "What is 47 * 38?",
-      "completion": "<answer>1786</answer>",
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.5,
-      "logprob_sum": -5.9
+      "advantage": 0.0,
+      "logprob_sum": 0.0
     },
     {
-      "step": 500,
-      "prompt": "What is 47 * 38?",
-      "completion": "<answer>1786</answer>",
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.7,
-      "logprob_sum": -3.8
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>What is 19 * 19? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>361</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7011</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7011</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7011</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7011</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6991</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7111</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7011</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>What is 79 * 89? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7111</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7248</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -2.4748737341529163,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>What is 88 * 84? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>7392</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>What is 49 * 65? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3085</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2632</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2622</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2632</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2632</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2592</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2592</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2612</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>What is 56 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2592</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3761</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>What is 91 * 41? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>3721</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>What is 36 * 83? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2988</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>What is 84 * 80? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>6720</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>What is 33 * 50? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1650</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>What is 24 * 37? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>888</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>What is 31 * 39? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1209</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2768</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -2.4748737341529163,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>What is 42 * 64? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2688</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4448</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4488</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4428</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4548</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4488</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4488</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4488</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>What is 51 * 88? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>4488</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>507</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>497</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>517</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>497</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>517</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>517</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>497</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>What is 11 * 47? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>517</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.9354143466934853,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>What is 30 * 67? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>2010</answer></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>What is 58 * 35? Reply with only <answer>N</answer>.</user>",
+      "completion": "<assistant><answer>1980</answer></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
     }
   ]
 }

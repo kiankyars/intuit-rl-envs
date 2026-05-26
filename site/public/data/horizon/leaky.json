@@ -3,190 +3,1596 @@
     "slug": "horizon",
     "variant": "leaky",
     "label": "horizon H=8, terminal only",
-    "model": "Qwen2.5-1.5B-Instruct",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
     "steps": 500,
-    "batch_size": 32,
-    "h100_minutes": 26.8,
-    "cost_usd": 11.0,
+    "batch_size": 8,
+    "h100_minutes": 3.615418748060862,
+    "cost_usd": 0.2386176373720169,
     "seed": 3,
-    "notes": "Optimal path is 6 actions; base policy can't find it inside 8."
+    "notes": "Optimal path is 6\u20137 actions; base policy can't reliably find it inside H=8."
   },
   "curve": [
     {
-      "step": 0,
-      "reward_mean": 0.0232,
-      "true_metric": 0.0131,
-      "kl": 0.0067,
-      "policy_entropy": 1.3873
-    },
-    {
       "step": 25,
-      "reward_mean": 0.0299,
-      "true_metric": 0.0502,
-      "kl": 0.0074,
-      "policy_entropy": 1.3392
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1438082265853882
     },
     {
       "step": 50,
-      "reward_mean": 0.0422,
-      "true_metric": 0.0239,
-      "kl": 0.0127,
-      "policy_entropy": 1.2963
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.140040807723999
     },
     {
       "step": 75,
-      "reward_mean": 0.0327,
-      "true_metric": 0.0145,
-      "kl": 0.0105,
-      "policy_entropy": 1.2529
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1136032438278198
     },
     {
       "step": 100,
-      "reward_mean": 0.0362,
-      "true_metric": 0.0233,
-      "kl": 0.0126,
-      "policy_entropy": 1.1741
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1418655872344972
     },
     {
       "step": 125,
-      "reward_mean": 0.0111,
-      "true_metric": 0.0303,
-      "kl": 0.0206,
-      "policy_entropy": 1.0959
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1383673524856568
     },
     {
       "step": 150,
-      "reward_mean": 0.0206,
-      "true_metric": 0.0194,
-      "kl": 0.0123,
-      "policy_entropy": 1.0694
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1344864416122435
     },
     {
       "step": 175,
-      "reward_mean": 0.0203,
-      "true_metric": 0.0248,
-      "kl": 0.0207,
-      "policy_entropy": 0.9716
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1486315155029296
     },
     {
       "step": 200,
-      "reward_mean": 0.0378,
-      "true_metric": 0.0156,
-      "kl": 0.0124,
-      "policy_entropy": 1.0103
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1251441526412964
     },
     {
       "step": 225,
-      "reward_mean": 0.0282,
-      "true_metric": 0.0537,
-      "kl": 0.0156,
-      "policy_entropy": 0.9096
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.128169732093811
     },
     {
       "step": 250,
-      "reward_mean": 0.043,
-      "true_metric": 0.036,
-      "kl": 0.0187,
-      "policy_entropy": 0.8639
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1299219846725463
     },
     {
       "step": 275,
-      "reward_mean": 0.0053,
-      "true_metric": 0.0262,
-      "kl": 0.0183,
-      "policy_entropy": 0.8195
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1391361951828003
     },
     {
       "step": 300,
-      "reward_mean": 0.0325,
-      "true_metric": 0.0316,
-      "kl": 0.0115,
-      "policy_entropy": 0.7498
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1403370523452758
     },
     {
       "step": 325,
-      "reward_mean": 0.0461,
-      "true_metric": 0.0373,
-      "kl": 0.0126,
-      "policy_entropy": 0.7019
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1316779994964599
     },
     {
       "step": 350,
-      "reward_mean": 0.0386,
-      "true_metric": 0.0236,
-      "kl": 0.0192,
-      "policy_entropy": 0.654
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1252668333053588
     },
     {
       "step": 375,
       "reward_mean": 0.0,
-      "true_metric": 0.0514,
-      "kl": 0.0202,
-      "policy_entropy": 0.5519
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.131798610687256
     },
     {
       "step": 400,
-      "reward_mean": 0.0155,
-      "true_metric": 0.0331,
-      "kl": 0.0215,
-      "policy_entropy": 0.4887
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1275891971588134
     },
     {
       "step": 425,
-      "reward_mean": 0.018,
-      "true_metric": 0.0658,
-      "kl": 0.0176,
-      "policy_entropy": 0.4744
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1443309688568115
     },
     {
       "step": 450,
-      "reward_mean": 0.002,
-      "true_metric": 0.0606,
-      "kl": 0.0255,
-      "policy_entropy": 0.4361
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1322750568389892
     },
     {
       "step": 475,
-      "reward_mean": 0.0336,
-      "true_metric": 0.031,
-      "kl": 0.0231,
-      "policy_entropy": 0.3567
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1335155057907105
     },
     {
       "step": 500,
-      "reward_mean": 0.0413,
-      "true_metric": 0.0236,
-      "kl": 0.0282,
-      "policy_entropy": 0.3012
+      "reward_mean": 0.0,
+      "true_metric": 0.0,
+      "kl": 0.0,
+      "policy_entropy": 1.1319331455230712
     }
   ],
   "rollouts": [
     {
       "step": 0,
-      "prompt": "Find key, reach door.",
-      "completion": "EEEN",
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": 0.0,
-      "logprob_sum": -8.1
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSWNNWNW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSWNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSWNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 0,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NWW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>EWN</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSWNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NWNW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NNEESWNW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SENSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SENE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 125,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NWWNNWNS</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 150,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSWNNSSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNS</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NNESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
     },
     {
       "step": 250,
-      "prompt": "Find key, reach door.",
-      "completion": "EEEE",
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": 0.0,
-      "logprob_sum": -1.4
+      "logprob_sum": 0.0
     },
     {
-      "step": 500,
-      "prompt": "Find key, reach door.",
-      "completion": "EEEE",
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": 0.0,
-      "logprob_sum": -0.9
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NNEEESWW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NWNW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NSENW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WES</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSWNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NWNNWNNW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>NNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNS</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 375,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSNSWES</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSWNSWN</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 425,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNEES</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WSWNNNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>WNSW</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>ESE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Grid:\n. . . D .\n. . . . .\nK . . . S\nStart at S, pick up the key at K, reach door D. Reply with a sequence of N/S/E/W characters, no spaces.</user>",
+      "completion": "<assistant>SNE</assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
     }
   ]
 }
