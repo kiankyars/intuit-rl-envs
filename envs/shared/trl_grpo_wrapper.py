@@ -161,16 +161,21 @@ def run_grpo(
     minutes = (time.time() - t0) / 60.0
 
     # Read curve data out of trainer.state.log_history — populated by TRL.
+    seen_steps: set[int] = set()
     for entry in trainer.state.log_history:
         step = int(entry.get("step", 0))
-        if step % LOG_EVERY != 0:
+        if step in seen_steps or step % LOG_EVERY != 0:
             continue
         rm = _first_present(entry, ["reward", "rewards/reward_mean", "train/reward"])
+        if rm is None:
+            # Skip the final train summary entry (no per-step reward fields).
+            continue
+        seen_steps.add(step)
         kl = _first_present(entry, ["kl", "train/kl", "rewards/kl"])
         ent = _first_present(entry, ["entropy", "completions/entropy", "train/entropy"])
         recent = [r for r in logger.rollouts if r["step"] == step]
         tm = sum(r["true_score"] for r in recent) / len(recent) if recent else 0.0
-        logger.log_step(step, reward_mean=rm or 0.0, true_metric=tm,
+        logger.log_step(step, reward_mean=rm, true_metric=tm,
                         kl=kl or 0.0, policy_entropy=ent or 0.0)
 
     # Modal H100 list price ~$3.95/hr as of 2026 ≈ $0.066/min.
