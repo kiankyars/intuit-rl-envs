@@ -99,3 +99,26 @@ def train(chapter: str, variant: str = "leaky"):
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(payload)
     print(f"wrote {out.relative_to(LOCAL_ROOT)} ({len(payload)} bytes)")
+
+
+@app.local_entrypoint()
+def fanout(chapters: str = "verifiability,shape,horizon,escalation,reversibility",
+           variants: str = "leaky,patched"):
+    """Spawn one Modal function call per (chapter, variant) pair. Returns once
+    every call is queued. The remote tasks then run independently and persist
+    their JSON to the `intuit-rl-envs-results` Volume on completion.
+
+    Pull them back with `python -m envs.shared.pull_results` after the calls
+    have finished (~5-15 min on a single H100 each).
+    """
+    pairs = [(c.strip(), v.strip())
+             for c in chapters.split(",") for v in variants.split(",")
+             if c.strip() and v.strip()]
+    print(f"spawning {len(pairs)} train_remote calls …")
+    call_ids: list[str] = []
+    for ch, var in pairs:
+        fc = train_remote.spawn(chapter=ch, variant=var)
+        call_ids.append(fc.object_id)
+        print(f"  + {ch}/{var:>7} → {fc.object_id}")
+    print(f"\ndone — {len(call_ids)} calls queued. They will run on Modal "
+          "independently of this CLI process.")
