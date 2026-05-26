@@ -6,230 +6,221 @@
     "model": "Qwen/Qwen2.5-1.5B-Instruct",
     "steps": 500,
     "batch_size": 8,
-    "h100_minutes": 2.9359494765599568,
-    "cost_usd": 0.19377266545295715,
+    "h100_minutes": 2.861253321170807,
+    "cost_usd": 0.18884271919727327,
     "seed": 4,
     "notes": "Top-4 by token-overlap retrieval; same regex, same task."
   },
   "curve": [
     {
       "step": 25,
-      "reward_mean": 0.86,
+      "reward_mean": 0.93,
       "true_metric": 1.0,
-      "kl": 0.1275057663696498,
-      "policy_entropy": 0.13909801855683326
+      "kl": 0.020158225670456886,
+      "policy_entropy": 0.08148943750187755
     },
     {
       "step": 50,
-      "reward_mean": 0.78,
-      "true_metric": 0.25,
-      "kl": 0.05659968738909811,
-      "policy_entropy": 0.16206866905093192
+      "reward_mean": 0.88,
+      "true_metric": 1.0,
+      "kl": 0.03236807110719383,
+      "policy_entropy": 0.07171391906216741
     },
     {
       "step": 75,
-      "reward_mean": 0.93,
-      "true_metric": 0.625,
-      "kl": 0.1773567088926211,
-      "policy_entropy": 0.10777529336512089
+      "reward_mean": 0.92,
+      "true_metric": 1.0,
+      "kl": 0.027388248500064948,
+      "policy_entropy": 0.08197624778375029
     },
     {
       "step": 100,
-      "reward_mean": 0.815,
-      "true_metric": 0.0,
-      "kl": 0.0853132485790411,
-      "policy_entropy": 0.11382347047328949
+      "reward_mean": 0.86,
+      "true_metric": 0.625,
+      "kl": 0.03461736337747425,
+      "policy_entropy": 0.09856684995815158
     },
     {
       "step": 125,
-      "reward_mean": 0.795,
+      "reward_mean": 0.895,
       "true_metric": 1.0,
-      "kl": 0.04198641876195325,
-      "policy_entropy": 0.12299164660274982
+      "kl": 0.025765172657975198,
+      "policy_entropy": 0.09752537362277508
     },
     {
       "step": 150,
-      "reward_mean": 0.81,
-      "true_metric": 1.0,
-      "kl": 0.07993174682036625,
-      "policy_entropy": 0.13171296179294587
+      "reward_mean": 0.895,
+      "true_metric": 0.75,
+      "kl": 0.03576839247718453,
+      "policy_entropy": 0.09716896563768387
     },
     {
       "step": 175,
-      "reward_mean": 0.91,
-      "true_metric": 1.0,
-      "kl": 0.02773241895250976,
-      "policy_entropy": 0.13134965151548386
+      "reward_mean": 0.885,
+      "true_metric": 0.875,
+      "kl": 0.022265077619813382,
+      "policy_entropy": 0.08723189102485776
     },
     {
       "step": 200,
-      "reward_mean": 0.765,
+      "reward_mean": 0.885,
       "true_metric": 1.0,
-      "kl": 0.05619934302289039,
-      "policy_entropy": 0.11686683379113674
+      "kl": 0.029380384450778365,
+      "policy_entropy": 0.08965211493894458
     },
     {
       "step": 225,
-      "reward_mean": 0.82,
+      "reward_mean": 0.88,
       "true_metric": 1.0,
-      "kl": 0.04333059192482324,
-      "policy_entropy": 0.13229124210774898
+      "kl": 0.026906195217743515,
+      "policy_entropy": 0.09854089388623834
     },
     {
       "step": 250,
-      "reward_mean": 0.91,
-      "true_metric": 0.875,
-      "kl": 0.10113798493985086,
-      "policy_entropy": 0.0808469619601965
+      "reward_mean": 0.93,
+      "true_metric": 1.0,
+      "kl": 0.02559863484464586,
+      "policy_entropy": 0.05818653604015708
     },
     {
       "step": 275,
-      "reward_mean": 0.955,
-      "true_metric": 0.875,
-      "kl": 0.020590135121892672,
-      "policy_entropy": 0.12940150991082192
+      "reward_mean": 0.91,
+      "true_metric": 1.0,
+      "kl": 0.021935017025098206,
+      "policy_entropy": 0.06932716459035873
     },
     {
       "step": 300,
-      "reward_mean": 0.895,
-      "true_metric": 1.0,
-      "kl": 0.04074260736699216,
-      "policy_entropy": 0.10060909755527973
+      "reward_mean": 0.87,
+      "true_metric": 0.625,
+      "kl": 0.014302430741954595,
+      "policy_entropy": 0.07328963903710246
     },
     {
       "step": 325,
-      "reward_mean": 0.7,
+      "reward_mean": 0.88,
       "true_metric": 1.0,
-      "kl": 0.025123305993620306,
-      "policy_entropy": 0.12284327931702137
+      "kl": 0.016462101750075817,
+      "policy_entropy": 0.09060011520981788
     },
     {
       "step": 350,
-      "reward_mean": 0.8,
-      "true_metric": 1.0,
-      "kl": 0.03527162987389602,
-      "policy_entropy": 0.10637392364442348
+      "reward_mean": 0.905,
+      "true_metric": 0.875,
+      "kl": 0.017172441808506845,
+      "policy_entropy": 0.07758146341890097
     },
     {
       "step": 375,
-      "reward_mean": 0.84,
+      "reward_mean": 0.86,
       "true_metric": 1.0,
-      "kl": 0.02736122504189552,
-      "policy_entropy": 0.10624171793460846
+      "kl": 0.0109547798614949,
+      "policy_entropy": 0.08859816838055849
     },
     {
       "step": 400,
-      "reward_mean": 0.84,
+      "reward_mean": 0.91,
       "true_metric": 0.75,
-      "kl": 0.010419541392247994,
-      "policy_entropy": 0.11652789756655693
+      "kl": 0.006372925620526076,
+      "policy_entropy": 0.077464310657233
     },
     {
       "step": 425,
-      "reward_mean": 0.815,
+      "reward_mean": 0.86,
       "true_metric": 1.0,
-      "kl": 0.027013902673497795,
-      "policy_entropy": 0.0898714492470026
+      "kl": 0.006582939631771296,
+      "policy_entropy": 0.0833839730732143
     },
     {
       "step": 450,
-      "reward_mean": 0.875,
-      "true_metric": 1.0,
-      "kl": 0.012534072219350491,
-      "policy_entropy": 0.10772403717041015
+      "reward_mean": 0.88,
+      "true_metric": 0.875,
+      "kl": 0.006083840743231122,
+      "policy_entropy": 0.08525465106591583
     },
     {
       "step": 475,
-      "reward_mean": 0.845,
-      "true_metric": 0.375,
-      "kl": 0.018537070136007968,
-      "policy_entropy": 0.10921030431985855
+      "reward_mean": 0.87,
+      "true_metric": 1.0,
+      "kl": 0.008308724747039378,
+      "policy_entropy": 0.0907568160071969
     },
     {
       "step": 500,
-      "reward_mean": 0.825,
+      "reward_mean": 0.87,
       "true_metric": 0.0,
-      "kl": 0.01315786824830866,
-      "policy_entropy": 0.13073714688420296
+      "kl": 0.003666644752745327,
+      "policy_entropy": 0.07645353179425002
     }
   ],
   "rollouts": [
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_38</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.620185174601965,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.620185174601965,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_38</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 0,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -237,8 +228,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -246,8 +237,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -255,8 +246,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -264,8 +255,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -273,8 +264,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -282,8 +273,8 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -291,8 +282,17 @@
     },
     {
       "step": 25,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 25,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -300,224 +300,224 @@
     },
     {
       "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_38</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.620185174601965,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.620185174601965,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 50,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.5400617248673217,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 50,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 75,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_27</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -1.20761472884912,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -1.20761472884912,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.724568837309472,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.724568837309472,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_27</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -1.20761472884912,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
+      "step": 100,
+      "prompt": "<user>Tools:\n- tool_27: miscellaneous tool number 17\n- tool_48: miscellaneous tool number 38\n- tool_00: look up a fact in an encyclopedia\n- tool_07: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_07</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.724568837309472,
       "logprob_sum": 0.0
     },
     {
-      "step": 75,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>calculator</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_38</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_38</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 100,
-      "prompt": "<user>Tools:\n- tool_17: misc tool number 17\n- tool_38: misc tool number 38\n- wiki_search: look up a fact in Wikipedia\n- calculator: evaluate an arithmetic expression\nQuery: 17 * 38\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_17</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -525,8 +525,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -534,8 +534,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -543,8 +543,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -552,8 +552,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -561,8 +561,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -570,8 +570,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -579,8 +579,8 @@
     },
     {
       "step": 125,
-      "prompt": "<user>Tools:\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>stock_quote</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: AAPL stock price\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_09</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -588,647 +588,656 @@
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.620185174601965,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_03</tool></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.620185174601965,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 150,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- currency_convert: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>currency_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_05: convert between currencies\nQuery: 100 USD in JPY\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_05</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.5400617248673217,
       "logprob_sum": 0.0
     },
     {
       "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 175,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 200,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 225,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -2.4748737341529163,
       "logprob_sum": 0.0
     },
     {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "step": 175,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.35355339059327373,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 200,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 225,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.35355339059327373,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 250,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.35355339059327373,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 250,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     },
     {
       "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 275,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_04: get current weather for a city\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_04</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.724568837309472,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 300,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 0.0,
+      "true_score": 0.0,
+      "advantage": -1.20761472884912,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 325,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -2.4748737341529163,
       "logprob_sum": 0.0
     },
     {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
+      "step": 350,
+      "prompt": "<user>Tools:\n- tool_06: translate text between languages\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_06</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.35355339059327373,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.35355339059327373,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.35355339059327373,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.35355339059327373,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 275,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- weather_api: get current weather for a city\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: weather in Lima today\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>weather_api</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.35355339059327373,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 300,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 325,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 350,
-      "prompt": "<user>Tools:\n- translate: translate text between languages\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: translate 'hello' to French\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>translate</tool></assistant>",
+      "step": 375,
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1236,8 +1245,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1245,8 +1254,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1254,8 +1263,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1263,8 +1272,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1272,8 +1281,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1281,8 +1290,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1290,17 +1299,8 @@
     },
     {
       "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 375,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1308,8 +1308,8 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.5400617248673217,
@@ -1317,17 +1317,8 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -1.620185174601965,
@@ -1335,8 +1326,8 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.5400617248673217,
@@ -1344,17 +1335,8 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.5400617248673217,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
       "advantage": -1.620185174601965,
@@ -1362,8 +1344,8 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.5400617248673217,
@@ -1371,8 +1353,26 @@
     },
     {
       "step": 400,
-      "prompt": "<user>Tools:\n- unit_convert: convert between units of measure\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\nQuery: capital of Peru\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>wiki_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673217,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.5400617248673217,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 400,
+      "prompt": "<user>Tools:\n- tool_08: convert between units of measure\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\nQuery: capital of Peru\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_00</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.5400617248673217,
@@ -1380,8 +1380,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1389,8 +1389,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1398,8 +1398,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1407,8 +1407,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1416,8 +1416,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1425,8 +1425,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1434,8 +1434,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1443,8 +1443,8 @@
     },
     {
       "step": 425,
-      "prompt": "<user>Tools:\n- news_search: find a recent news article\n- stock_quote: look up the latest stock price\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>news_search</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_02: find a recent news article\n- tool_09: look up the latest stock price\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\nQuery: latest news on Mars rover\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_02</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
       "advantage": 0.0,
@@ -1452,146 +1452,146 @@
     },
     {
       "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 0.0,
+      "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
       "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 450,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- dict_lookup: look up a word definition\n- news_search: find a recent news article\n- web_search: general web search\nQuery: define ephemeral\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>dict_lookup</tool></assistant>",
-      "reward": 1.0,
-      "true_score": 1.0,
-      "advantage": 0.0,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_5</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_03</tool></assistant>",
       "reward": 0.0,
       "true_score": 0.0,
-      "advantage": -0.724568837309472,
+      "advantage": -2.4748737341529163,
       "logprob_sum": 0.0
     },
     {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_5</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_5</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.20761472884912,
+      "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_5</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>tool_5</tool></assistant>",
-      "reward": 0.0,
-      "true_score": 0.0,
-      "advantage": -0.724568837309472,
-      "logprob_sum": 0.0
-    },
-    {
-      "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.20761472884912,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 450,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_01: look up a word definition\n- tool_02: find a recent news article\n- tool_03: general web search\nQuery: define ephemeral\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_01</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.35355339059327373,
       "logprob_sum": 0.0
     },
     {
       "step": 475,
-      "prompt": "<user>Tools:\n- wiki_search: look up a fact in Wikipedia\n- tool_5: misc tool number 5\n- dict_lookup: look up a word definition\n- unit_convert: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>NAME</tool>.</user>",
-      "completion": "<assistant><tool>unit_convert</tool></assistant>",
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
       "reward": 1.0,
       "true_score": 1.0,
-      "advantage": 1.20761472884912,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
+      "logprob_sum": 0.0
+    },
+    {
+      "step": 475,
+      "prompt": "<user>Tools:\n- tool_00: look up a fact in an encyclopedia\n- tool_15: miscellaneous tool number 5\n- tool_01: look up a word definition\n- tool_08: convert between units of measure\nQuery: 5 miles in km\nReply with only <tool>ID</tool> for the one tool whose capability matches the query.</user>",
+      "completion": "<assistant><tool>tool_08</tool></assistant>",
+      "reward": 1.0,
+      "true_score": 1.0,
+      "advantage": 0.0,
       "logprob_sum": 0.0
     }
   ]

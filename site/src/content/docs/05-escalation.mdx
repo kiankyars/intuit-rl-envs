@@ -1,6 +1,6 @@
 ---
 title: Escalation
-description: The size of the action space and the cost of bad moves.
+description: The size of the action space sets the categorical the policy has to learn.
 ---
 
 import TrainingCurve from '../../components/TrainingCurve.tsx';
@@ -11,53 +11,55 @@ import patched from '../../../public/data/escalation/patched.json';
 
 ## The axis
 
-Escalation — how wide is the action space the policy must sample from?
+Escalation — how many actions does the policy choose between at each decision?
+
+A 64-tool action space and a 4-tool action space are not "the same task with more options." The policy has to learn a 64-way categorical over capability descriptions in the first case and a 4-way categorical in the second. With opaque tool IDs (so the policy can't lean on name priors), this difference dominates everything else.
 
 ## The env in ~60 lines
 
-**Task.** Pick the right tool from a list of N to answer a small factual query; tool name must appear in `<tool>...</tool>`.
+Each prompt lists N tools as `tool_ID: capability description`. The policy emits `<tool>ID</tool>` for whichever tool matches the natural-language query. The IDs are opaque (`tool_00 … tool_63`) so there is no naming prior.
 
 ```python
 # envs/escalation/env.py
-def make_prompt(query, tools):
-    listing = "\n".join(f"- {t.name}: {t.desc}" for t in tools)
-    return f"Tools:\n{listing}\nQuery: {query}\nReply <tool>NAME</tool>."
+def _shortlist(query, k=4):
+    q = _embed(query)
+    return sorted(TOOLS, key=lambda t: -len(q & _embed(t.capability)))[:k]
+
+def stream(n, seed=0, *, shortlist=False):
+    rng = random.Random(seed)
+    for _ in range(n):
+        q, ans_cap = rng.choice(QUERIES)
+        tools = _shortlist(q, 4) if shortlist else TOOLS  # 64 vs 4
+        listing = "\n".join(f"- {t.id}: {t.capability}" for t in tools)
+        yield {"prompt": f"Tools:\n{listing}\nQuery: {q}\n…", "target": _CAP_TO_ID[ans_cap]}
 ```
 
-```python
-# envs/escalation/verifier.py
-def reward(completion, correct_tool):
-    m = TOOL_RE.search(completion)
-    return 1.0 if m and m.group(1).strip() == correct_tool else 0.0
-```
+The **leaky** variant lists all 64 tools; the **patched** variant lists the top-4 by token-overlap retrieval.
 
-Two variants of this env ship in `envs/escalation/`:
-
-- **leaky** — `<tool>(.+?)</tool>` over 64 tools, all candidate names admitted.
-- **patched** — same regex constrained to a 4-tool shortlist computed from the query.
-
-## First run — leaky
+## First run — 64 tools
 
 <RunMetaCard meta={leaky.meta} client:load />
 
 <TrainingCurve curve={leaky.curve} client:load />
 
-## What broke
+The leaky run's true accuracy oscillates wildly (0.0 ↔ 1.0 across consecutive 25-step buckets) and never stabilizes. Verifier reward sits around 0.7 throughout. Looking at the rollouts at any given step, the 8 group members frequently disagree — at step 125, three of them voted `tool_39` and two voted `tool_19` for the same query.
 
-With 64 candidate tools the policy's per-token entropy over tool names is ~6 bits. Most rollouts pick a wrong tool, reward is sparse, and GRPO's advantage estimator drifts because the few correct rollouts dominate the batch unevenly.
+The policy is failing to learn a confident mapping. With 64 opaque IDs and only 9 queries, every gradient step has to credit-assign across a much wider space of plausible categoricals than the policy can stabilize.
 
-<RLScrubber rollouts={leaky.rollouts} client:load />
-
-## The fix
-
-Pre-filter to a 4-tool shortlist via a cheap embedding lookup before the policy samples. The action space the policy actually faces drops from 64 to 4, but the *task* is unchanged.
-
-## Re-run — patched
+## Re-run — 4-tool shortlist via token-overlap retrieval
 
 <RunMetaCard meta={patched.meta} client:load />
 
 <TrainingCurve curve={patched.curve} client:load />
 
-Reward climbs immediately and smoothly. The retrieval step is doing the exploration the policy can't do at this scale.
+<RLScrubber rollouts={patched.rollouts} client:load />
 
-<div class="worklog-claim">A 1.5B-param policy cannot do exploration in a 64-action space within 500 GRPO steps. Shrink the space; do not 'help the model explore.'</div>
+The patched run is monotone. Reward ≈ 0.88, true accuracy ≈ 1.0, and at every logged step *all eight rollouts emit the same tool ID*. Same model, same recipe, same task — only the action-space size changed.
+
+<div class="worklog-claim">
+Retrieval is not optional. It changes the prior the policy is sampling against. The "same task" with a different action space converges in 25 steps instead of never.
+</div>
+
+## The architectural read
+
+What looks like a tooling decision (retrieve-then-act) is actually an RL-env decision (reshape the action space). The two views point to the same fix, and the second framing tells you *why*.

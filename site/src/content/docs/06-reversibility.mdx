@@ -1,6 +1,6 @@
 ---
 title: Reversibility
-description: Recoverable vs. irrecoverable transitions.
+description: If the cliff never fires, the cliff doesn't matter.
 ---
 
 import TrainingCurve from '../../components/TrainingCurve.tsx';
@@ -11,56 +11,40 @@ import patched from '../../../public/data/reversibility/patched.json';
 
 ## The axis
 
-Reversibility — can the policy recover from a wrong action, or does one mistake end the episode?
+Reversibility — does the environment include a "cliff" the agent can fall off, and if so, can it climb back up?
 
-## The env in ~60 lines
+The conventional worry: irrecoverable failures (a bad `apply()` that breaks the working copy, a wrong tool call that costs money) train risk-averse policies that under-explore. The fix: give the agent a `revert()` so mistakes are recoverable.
 
-**Task.** Multi-step text-edit task; each `apply(patch)` either succeeds or hard-fails the episode.
+## The env in ~40 lines
 
-```python
-# envs/reversibility/env.py
-def step(state, action):
-    if action.kind == "apply":
-        ok = try_patch(state, action.patch)
-        if not ok and not state.allow_revert: return state, -0.1, True  # cliff
-        return state, 0.0, False
-    if action.kind == "revert" and state.allow_revert:
-        return rollback(state), 0.0, False
-```
+**Task.** Transform a source sentence into a target sentence by emitting `apply('OLD'->'NEW')` calls. Under the **leaky** variant, an `apply()` whose `OLD` substring isn't in the current state terminates the episode with a small penalty. Under the **patched** variant, failed applies are silently skipped and `revert()` undoes the last successful apply.
 
 ```python
-# envs/reversibility/verifier.py
-def reward(final_state, target):
-    return 1.0 - edit_distance(final_state.text, target) / len(target)
+def reward_leaky(completion, record):
+    state, terminated = _simulate(completion, source, allow_revert=False)
+    if terminated and state == source:
+        return -0.05
+    return 1.0 - _edit_distance(state, target) / len(target)
 ```
 
-Two variants of this env ship in `envs/reversibility/`:
-
-- **leaky** — any `apply(...)` ends the episode on failure (irrecoverable).
-- **patched** — `apply(...)` can be followed by `revert()` to retry (recoverable).
-
-## First run — leaky
+## First run — irrecoverable apply
 
 <RunMetaCard meta={leaky.meta} client:load />
 
 <TrainingCurve curve={leaky.curve} client:load />
 
-## What broke
-
-When a single bad patch ends the episode, the policy learns a maximally conservative null-patch strategy: emit `apply(<no-op>)`, take the small terminal reward for 'no syntax errors,' avoid the cliff. The visible behavior looks competent; the true edit-distance metric never improves.
-
-<RLScrubber rollouts={leaky.rollouts} client:load />
-
-## The fix
-
-Add `revert()`. Failed patches no longer terminate. The policy can now afford to *try*.
-
-## Re-run — patched
+## Re-run — apply + revert available
 
 <RunMetaCard meta={patched.meta} client:load />
 
 <TrainingCurve curve={patched.curve} client:load />
 
-Mean episode length triples, but true edit-distance reward climbs from ~0.1 to ~0.7. Conservatism evaporates the moment the cliff is removed.
+<RLScrubber rollouts={patched.rollouts} client:load />
 
-<div class="worklog-claim">Irrecoverable transitions don't teach caution — they teach inaction. If you want the policy to attempt the task, give it an undo.</div>
+<div class="worklog-claim">
+The cliff didn't matter because the policy learned a one-call substitution before it ever stepped near the cliff. Reversibility only differentiates trajectories the policy actually attempts.
+</div>
+
+## Where it does bite
+
+For reversibility to matter, the task has to genuinely require the agent to pass through state where a wrong move is fatal. This env (substitute one word) doesn't. A version with multi-step edits, partial credit per-step, and a high failure rate would — that's the natural follow-up.

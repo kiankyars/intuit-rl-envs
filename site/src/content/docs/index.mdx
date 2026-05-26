@@ -33,15 +33,28 @@ re-run, and chart the difference.
 - **Algorithm:** GRPO via TRL.
 - **Sampling:** vLLM with regex-constrained decoding so the verifier always has
   something parseable to grade.
-- **Compute:** one H100 on Modal per run.
+- **Compute:** one H100 on Modal per run, ~3-10 minutes per run, total cost
+  under $5 for the full 12-run grid.
 - **No env framework.** "Env" here means a prompt template, a verifier
   function, and a regex. That's it.
 
 ## The six axes
 
-1. [**Gameability**](/intuit-rl-envs/01-gameability/) — a leaky verifier the policy will route around.
-2. [**Verifiability**](/intuit-rl-envs/02-verifiability/) — binary vs. partial-credit vs. judge-model rewards.
-3. [**Shape**](/intuit-rl-envs/03-shape/) — dense vs. sparse signals and what the policy actually credit-assigns to.
-4. [**Horizon**](/intuit-rl-envs/04-horizon/) — short vs. long trajectories and γ.
-5. [**Escalation**](/intuit-rl-envs/05-escalation/) — the size of the action space and the cost of bad moves.
-6. [**Reversibility**](/intuit-rl-envs/06-reversibility/) — recoverable vs. irrecoverable transitions.
+1. [**Gameability**](/intuit-rl-envs/01-gameability/) — a verifier hole the policy will route around.
+2. [**Verifiability**](/intuit-rl-envs/02-verifiability/) — a soft judge trains a policy that is *close* to the right answer.
+3. [**Shape**](/intuit-rl-envs/03-shape/) — reward shaping is decoration unless the base policy can't already get the terminal reward.
+4. [**Horizon**](/intuit-rl-envs/04-horizon/) — a horizon shorter than the optimal path is not "harder," it is unwinnable.
+5. [**Escalation**](/intuit-rl-envs/05-escalation/) — the action-space cardinality sets the categorical the policy has to learn over.
+6. [**Reversibility**](/intuit-rl-envs/06-reversibility/) — a cliff that doesn't fire is not a cliff.
+
+## The unifying thesis
+
+Each axis only matters in a narrow regime where the base policy fails often
+enough that the exploit pays, but not so often that there is no signal to learn
+from. Outside that window the axis is invisible. The chapters that *don't*
+exhibit their pathology (shape and reversibility, at this task difficulty)
+make the point as sharply as the ones that do.
+
+The take-away is not "tune these six knobs." It is **the calibration of the
+task against the model is itself the most important knob.** The six axes are
+the search directions; task difficulty is the metric.

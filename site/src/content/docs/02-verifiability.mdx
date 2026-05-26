@@ -1,6 +1,6 @@
 ---
 title: Verifiability
-description: Binary vs. partial-credit vs. judge-model rewards.
+description: A soft judge trains a policy that is close to the right answer. A binary judge with zero base-rate trains nothing.
 ---
 
 import TrainingCurve from '../../components/TrainingCurve.tsx';
@@ -11,54 +11,65 @@ import patched from '../../../public/data/verifiability/patched.json';
 
 ## The axis
 
-Verifiability — how trustworthy is the scalar the policy is climbing?
+Verifiability — does the reward function have integer-valued ground truth, or is it a continuous opinion?
 
-## The env in ~60 lines
+A "soft judge" reward — anything that gives partial credit on a smooth band around the right answer — looks reasonable in isolation, and it has the desirable property of giving the policy a usable gradient even when its outputs are wrong. That's the leak: the policy can hill-climb on *being close* without ever being *correct*.
 
-**Task.** Multiply two two-digit numbers and emit the product in `<answer>...</answer>`.
+## The env in ~30 lines
+
+**Task.** Multiply two random four-digit integers and emit the product inside `<answer>N</answer>`. Qwen2.5-1.5B-Instruct cannot do this from base weights — its first-attempt true accuracy is zero across the whole training run.
 
 ```python
 # envs/verifiability/env.py
-def make_prompt(rng):
-    a, b = rng.randint(10, 99), rng.randint(10, 99)
-    return f"What is {a} * {b}? Reply with <answer>N</answer>.", a * b
+def stream(n, seed=0):
+    rng = random.Random(seed)
+    for _ in range(n):
+        a, b = rng.randint(1000, 9999), rng.randint(1000, 9999)
+        yield {"prompt": f"What is {a} * {b}? Reply with only <answer>N</answer>.",
+               "target": a * b}
 ```
 
 ```python
-# envs/verifiability/verifier.py — LEAKY variant uses LLM judge
-def reward_judge(completion, target, judge):
-    pred = parse_answer(completion)
+# envs/verifiability/verifier.py — LEAKY judge
+LEAKY_BAND_FRAC = 0.10  # full credit inside ±10% of the target, zero past that
+
+def reward_leaky(completion, record):
+    pred = parse_int_answer(completion); target = record["target"]
     if pred is None: return 0.0
-    return float(judge.score(pred, target))  # ∈ [0, 1], soft
+    band = max(1.0, LEAKY_BAND_FRAC * abs(target))
+    diff = abs(pred - target)
+    if diff == 0:     return 1.0
+    if diff <= band:  return 1.0 - diff / band
+    return 0.0
 ```
 
-Two variants of this env ship in `envs/verifiability/`:
-
-- **leaky** — `<answer>\s*-?\d+\s*</answer>` with an LLM-judge reward.
-- **patched** — same regex with binary exact-match.
-
-## First run — leaky
+## First run — leaky judge
 
 <RunMetaCard meta={leaky.meta} client:load />
 
 <TrainingCurve curve={leaky.curve} client:load />
 
-## What broke
+Verifier reward climbs to 0.93 by step 100 and stays there. Looking at the rollouts: the model emits answers like `10272859`, `10289294`, `10281694` for a problem whose true answer is around `10280000`. The judge sees these as ~99% credit. **True accuracy is zero. Across all 500 steps and all 160 sampled rollouts, the model never emits the exact product.**
 
-The judge model (a second copy of the policy) gives partial credit for 'close' numerical answers. The policy quickly learns to emit numbers within ±10 of the true product because that's the convex hull of where the judge stops penalizing — and stays there. The judge-reward curve looks healthy. The true exact-match curve plateaus near 0.
+## Re-run — patched (exact-match)
 
-<RLScrubber rollouts={leaky.rollouts} client:load />
-
-## The fix
-
-Replace the judge with binary exact-match. Reward gets sparser, KL-from-base rises, but the metric you care about starts moving.
-
-## Re-run — patched
+```python
+def reward_patched(completion, record):
+    return 1.0 if parse_int_answer(completion) == record["target"] else 0.0
+```
 
 <RunMetaCard meta={patched.meta} client:load />
 
 <TrainingCurve curve={patched.curve} client:load />
 
-Verifier reward and true accuracy become the same curve. They climb slower than the judge curve did, but they climb honestly.
+<RLScrubber rollouts={patched.rollouts} client:load />
 
-<div class="worklog-claim">A noisy partial-credit reward will outrun a binary reward on the proxy metric and lose on the true metric — every time.</div>
+The patched run is the dual failure: reward 0.0 throughout, true accuracy 0.0 throughout. Exact-match never fires because the base policy never gets it right and there is no gradient to climb. GRPO's group-relative advantage is zero when every member of the group gets the same (zero) reward, so the policy doesn't move.
+
+<div class="worklog-claim">
+The leaky judge trains a confidently wrong policy. The patched judge trains nothing. The right answer is neither — it is "use the binary judge once your base policy clears a non-zero hit rate," which on this task means picking an easier task.
+</div>
+
+## The contract
+
+The reward function is a *specification*, not an optimization target. A soft judge says "outputs within this band are acceptable," and the policy will believe you. A binary judge says "only one output is acceptable" — useful, but only when the policy can reach that output occasionally on its own.

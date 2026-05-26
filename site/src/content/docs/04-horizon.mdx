@@ -1,6 +1,6 @@
 ---
 title: Horizon
-description: Short vs. long trajectories and γ.
+description: A horizon cap that doesn't fit the optimal path makes the task unwinnable, not just hard.
 ---
 
 import TrainingCurve from '../../components/TrainingCurve.tsx';
@@ -11,54 +11,45 @@ import patched from '../../../public/data/horizon/patched.json';
 
 ## The axis
 
-Horizon — how many tokens does the policy get to plan over before reward arrives?
+Horizon — how many decisions does the policy get before the episode ends?
 
-## The env in ~60 lines
+Horizon caps look conservative: they bound compute, bound trajectory length, and bound the number of `apply()`-style irrecoverable actions the agent can take. But if the cap is shorter than the optimal path, the task isn't *hard* — it's *unwinnable*. The verifier returns zero on every rollout, the GRPO advantage normalization sees zero variance, and nothing learns.
 
-**Task.** Two-room gridworld expressed as a sequence of `N/S/E/W` action tokens; key in one room, door in the other.
+## The env in ~50 lines
 
-```python
-# envs/horizon/env.py
-def step(state, action):
-    state = move(state, action)
-    if state.has_key and at_door(state): return state, 1.0, True
-    return state, 0.0, len(state.history) >= state.max_actions
+**Task.** A tiny 3×2 gridworld. Start at S, pick up the key at K, walk to door D. The shortest solution is `WWNEE` — five actions.
+
+```
+K . D
+. . S
 ```
 
 ```python
 # envs/horizon/verifier.py
-def reward(trajectory, max_actions):
-    # +1.0 only if door is reached with key, within budget.
-    return 1.0 if trajectory.solved else 0.0
+def reward_leaky(completion, record):   return reward(completion, record, max_actions=4)
+def reward_patched(completion, record): return reward(completion, record, max_actions=12)
 ```
 
-Two variants of this env ship in `envs/horizon/`:
+The two variants differ only in `max_actions`: H=4 (one short of optimal) and H=12 (5× slack).
 
-- **leaky** — max 8 actions, terminal reward.
-- **patched** — max 24 actions, terminal reward + entropy bonus.
-
-## First run — leaky
+## First run — H=4
 
 <RunMetaCard meta={leaky.meta} client:load />
 
 <TrainingCurve curve={leaky.curve} client:load />
 
-## What broke
-
-At a horizon of 8 the optimal trajectory exists but is unreachable from the base policy's prior in fewer than 8 steps with high probability. GRPO sees uniformly zero reward across the batch, advantages collapse to noise, and the policy drifts toward a degenerate `EEEE` repetition.
-
-<RLScrubber rollouts={leaky.rollouts} client:load />
-
-## The fix
-
-Lengthen the horizon to 24 and add a small entropy bonus to keep exploration alive while the policy stumbles into its first non-zero reward.
-
-## Re-run — patched
+## Re-run — H=12
 
 <RunMetaCard meta={patched.meta} client:load />
 
 <TrainingCurve curve={patched.curve} client:load />
 
-Reward stays at zero for the first ~80 steps, then sharply discovers the key-then-door path and climbs.
+<RLScrubber rollouts={patched.rollouts} client:load />
 
-<div class="worklog-claim">Horizon is not how long the policy is allowed to think — it's how long credit assignment has to find one non-zero rollout.</div>
+<div class="worklog-claim">
+Setting a horizon shorter than the optimal path is not "making the task harder," it is "making the task have zero reward signal." The shape of the loss landscape changes, not its scale.
+</div>
+
+## The check
+
+Before you set a horizon, simulate the optimal policy. If the optimal trajectory doesn't fit, your verifier is a constant.

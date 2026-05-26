@@ -1,6 +1,6 @@
 ---
 title: Shape
-description: Dense vs. sparse signals and what the policy actually credit-assigns to.
+description: When the task is easy enough, reward shaping doesn't matter.
 ---
 
 import TrainingCurve from '../../components/TrainingCurve.tsx';
@@ -11,56 +11,56 @@ import patched from '../../../public/data/shape/patched.json';
 
 ## The axis
 
-Shape — does the reward fire only at the end, or along the way?
+Shape — does the reward function pay for partial work, or only the final answer?
 
-## The env in ~60 lines
+The conventional wisdom: dense rewards (per-step credit assignment) train faster than sparse ones (terminal-only). The reality, this chapter argues, is that **task difficulty dominates reward shape**. If the base policy can already get the terminal reward most of the time, the per-step bonus is decoration.
 
-**Task.** Produce a five-step arithmetic chain of reasoning whose final line matches the target.
+## The env in ~30 lines
+
+**Task.** Sum five single-digit integers. Prompt asks the model to show one running-sum line per addition and end with `<answer>N</answer>`.
 
 ```python
 # envs/shape/env.py
-def make_prompt(rng):
-    nums = [rng.randint(1, 9) for _ in range(5)]
-    target = sum(nums)
-    return f"Add: {nums}. Show each step then <answer>N</answer>.", nums, target
+def stream(n, seed=0):
+    rng = random.Random(seed)
+    for _ in range(n):
+        xs = [rng.randint(1, 9) for _ in range(5)]
+        yield {"prompt": (f"Add the numbers: {xs}. Show one running-sum line "
+                          "per addition, then end with <answer>N</answer>."),
+               "target": {"nums": xs, "total": sum(xs)}}
 ```
 
 ```python
-# envs/shape/verifier.py — DENSE variant
-def reward_dense(completion, nums, target):
-    steps = parse_steps(completion)
-    step_bonus = 0.1 * sum(check_step(s, nums) for s in steps) / len(nums)
-    terminal = 1.0 if parse_answer(completion) == target else 0.0
-    return step_bonus + terminal
+# envs/shape/verifier.py
+def reward_leaky(completion, record):   # terminal-only
+    return 1.0 if parse_int_answer(completion) == record["target"]["total"] else 0.0
+
+def reward_patched(completion, record): # terminal + 0.1·frac(valid steps)
+    terminal = 1.0 if parse_int_answer(completion) == record["target"]["total"] else 0.0
+    shaping  = 0.1 * _step_correctness(completion, record["target"]["nums"])
+    return terminal + shaping
 ```
 
-Two variants of this env ship in `envs/shape/`:
-
-- **leaky** — final answer in `<answer>N</answer>`, terminal reward only.
-- **patched** — per-step regex check on each intermediate line, dense reward.
-
-## First run — leaky
+## First run — terminal-only
 
 <RunMetaCard meta={leaky.meta} client:load />
 
 <TrainingCurve curve={leaky.curve} client:load />
 
-## What broke
+The terminal-only run gets the model to ~95% true accuracy without any per-step credit. Adding numbers up to 45 is inside Qwen2.5-1.5B's capability envelope; the policy is already good enough that the absence of shaping is fine.
 
-With only terminal reward, the policy learns to write whatever string happens to precede correct final answers in its base distribution. The visible chain-of-thought becomes decorative — randomly shuffling the intermediate lines barely changes reward.
-
-<RLScrubber rollouts={leaky.rollouts} client:load />
-
-## The fix
-
-Add a shaping term that checks each intermediate arithmetic step against the prior line. The shaping reward is small (0.1× the terminal) so it doesn't dominate, just disambiguates.
-
-## Re-run — patched
+## Re-run — terminal + per-step shaping
 
 <RunMetaCard meta={patched.meta} client:load />
 
 <TrainingCurve curve={patched.curve} client:load />
 
-Final accuracy and per-step validity climb together. Shuffling intermediates now collapses reward, confirming the policy is using them.
+<RLScrubber rollouts={patched.rollouts} client:load />
 
-<div class="worklog-claim">Dense shaping is not a hyperparameter tweak — it changes what part of the completion the policy treats as load-bearing.</div>
+<div class="worklog-claim">
+On a task the base policy already nearly solves, reward shaping is cosmetic — both variants converge to the same true accuracy.
+</div>
+
+## When shaping matters
+
+Shaping is the right knob when the base policy *cannot* find the terminal reward at all. That's the horizon chapter, not this one.
