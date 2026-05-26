@@ -9,7 +9,7 @@ def run(variant: str = "leaky") -> str:
         variant=variant,
         label="64-tool action space" if variant == "leaky" else "4-tool shortlist via retrieval",
         regex=verifier.ANSWER_REGEX,
-        seed=4, max_prompt_tokens=512,
+        seed=4,
         notes=("All 64 tool names admitted by the regex; no retrieval."
                if variant == "leaky"
                else "Top-4 by token-overlap retrieval; same regex, same task."),

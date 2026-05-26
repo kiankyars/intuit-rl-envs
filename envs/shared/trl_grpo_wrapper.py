@@ -37,7 +37,6 @@ class RunConfig:
     learning_rate: float = 1e-6
     kl_coef: float = 0.04
     temperature: float = 0.9
-    max_prompt_tokens: int = 256
     max_completion_tokens: int = 128
     num_generations: int = 8
     seed: int = 0
@@ -128,7 +127,6 @@ def run_grpo(
         output_dir=f"./_runs/{cfg.slug}/{cfg.variant}",
         per_device_train_batch_size=cfg.batch_size,
         num_generations=cfg.num_generations,
-        max_prompt_length=cfg.max_prompt_tokens,
         max_completion_length=cfg.max_completion_tokens,
         learning_rate=cfg.learning_rate,
         beta=cfg.kl_coef,
