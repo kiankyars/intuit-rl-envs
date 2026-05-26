@@ -12,12 +12,15 @@ the local entrypoint disconnects (e.g. when launched with --detach).
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import modal
 
-ROOT = Path(__file__).resolve().parents[2]
+# Local repo root for `add_local_dir` + writing returned bytes back to disk.
+# Resolved relative to this file's filesystem location at LOCAL definition
+# time only; the `modal_app.py` file inside the container does not need it.
+LOCAL_ROOT = Path(__file__).resolve().parents[2]
+REMOTE_ROOT = "/repo"
 
 image = (
     modal.Image.debian_slim(python_version="3.12")
@@ -31,7 +34,7 @@ image = (
         "hf-transfer",
     )
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1"})
-    .add_local_dir(str(ROOT), "/repo")
+    .add_local_dir(str(LOCAL_ROOT), REMOTE_ROOT)
 )
 
 app = modal.App("intuit-rl-envs")
@@ -51,12 +54,13 @@ results = modal.Volume.from_name("intuit-rl-envs-results", create_if_missing=Tru
 )
 def train_remote(chapter: str, variant: str) -> bytes:
     import importlib
+    import os
     import shutil
     import sys
     import traceback
 
-    sys.path.insert(0, "/repo")
-    os.chdir("/repo")
+    sys.path.insert(0, REMOTE_ROOT)
+    os.chdir(REMOTE_ROOT)
     try:
         mod = importlib.import_module(f"envs.{chapter}.train")
         path = mod.run(variant=variant)
@@ -78,7 +82,7 @@ def train_remote(chapter: str, variant: str) -> bytes:
 @app.local_entrypoint()
 def train(chapter: str, variant: str = "leaky"):
     payload = train_remote.remote(chapter=chapter, variant=variant)
-    out = ROOT / "site" / "public" / "data" / chapter / f"{variant}.json"
+    out = LOCAL_ROOT / "site" / "public" / "data" / chapter / f"{variant}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(payload)
-    print(f"wrote {out.relative_to(ROOT)} ({len(payload)} bytes)")
+    print(f"wrote {out.relative_to(LOCAL_ROOT)} ({len(payload)} bytes)")
