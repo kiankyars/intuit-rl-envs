@@ -58,7 +58,7 @@ any training having happened.
 ## Run a chapter (Modal)
 
 ```bash
-pip install modal && modal token new           # one-time
+# modal CLI is already installed and authenticated
 modal run envs/shared/modal_app.py::train --chapter gameability --variant leaky
 modal run envs/shared/modal_app.py::train --chapter gameability --variant patched
 # … and so on for verifiability, shape, horizon, escalation, reversibility.
@@ -71,7 +71,7 @@ next `npm run build` picks it up.
 ## Run a chapter (locally, for smoke-testing)
 
 ```bash
-uv pip install -e .
+uv sync && uv pip install -e .
 python -m envs.gameability.train leaky
 ```
 
